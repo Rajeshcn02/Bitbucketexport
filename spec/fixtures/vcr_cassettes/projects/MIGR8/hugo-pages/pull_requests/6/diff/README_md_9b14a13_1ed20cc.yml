@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/pull-requests/1/diff/README.md?diffType=COMMIT&sinceId=9b14a132c4f6f27b1ef4bee034f79151d434756a&untilId=1ed20cc335aa761425d8dd3543fd52f866f5d6a2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Mon, 01 Jul 2019 23:43:20 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx1423x242291x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"fromHash":"9b14a132c4f6f27b1ef4bee034f79151d434756a","toHash":"1ed20cc335aa761425d8dd3543fd52f866f5d6a2","contextLines":10,"whitespace":"SHOW","diffs":[{"source":{"components":["README.md"],"parent":"","name":"README.md","extension":"md","toString":"README.md"},"destination":{"components":["README.md"],"parent":"","name":"README.md","extension":"md","toString":"README.md"},"hunks":[{"context":"through
+        the steps to configure it.","sourceLine":5,"sourceSpan":11,"destinationLine":5,"destinationSpan":15,"segments":[{"type":"CONTEXT","lines":[{"source":5,"destination":5,"line":"","truncated":false},{"source":6,"destination":6,"line":"[![Deploy
+        to Heroku](https://cdn.herokuapp.com/deploy/button.svg)](https://heroku.com/deploy)","truncated":false},{"source":7,"destination":7,"line":"","truncated":false},{"source":8,"destination":8,"line":"Next,
+        create a GitHub repository and add a hugo-pages branch to it.","truncated":false},{"source":9,"destination":9,"line":"See
+        [this repository''s hugo-pages branch](https://github.com/spraints/hugo-pages/tree/hugo-pages)","truncated":false},{"source":10,"destination":10,"line":"for
+        an example.","truncated":false},{"source":11,"destination":11,"line":"","truncated":false},{"source":12,"destination":12,"line":"Finally,
+        visit your GitHub Pages site! For example, see","truncated":false},{"source":13,"destination":13,"line":"[http://pickardayune.com/hugo-pages](http://spraints.github.io/hugo-pages).","truncated":false},{"source":14,"destination":14,"line":"","truncated":false}],"truncated":false},{"type":"ADDED","lines":[{"source":15,"destination":15,"line":"<<<<<<<","truncated":false,"conflictMarker":"MARKER"}],"truncated":false},{"type":"CONTEXT","lines":[{"source":15,"destination":16,"line":"test","truncated":false,"conflictMarker":"OURS"}],"truncated":false},{"type":"ADDED","lines":[{"source":16,"destination":17,"line":"=======","truncated":false,"conflictMarker":"MARKER"},{"source":16,"destination":18,"line":"","truncated":false,"conflictMarker":"THEIRS"},{"source":16,"destination":19,"line":">>>>>>>","truncated":false,"conflictMarker":"MARKER"}],"truncated":false}],"truncated":false}],"truncated":false}],"truncated":false}'
+    http_version: 
+  recorded_at: Mon, 01 Jul 2019 23:43:20 GMT
+recorded_with: VCR 3.0.3

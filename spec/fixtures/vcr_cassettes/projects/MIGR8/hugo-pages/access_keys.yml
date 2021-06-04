@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/keys/1.0/projects/MIGR8/repos/hugo-pages/ssh?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 24 Apr 2019 00:14:09 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx14x141124x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":2,"limit":50,"isLastPage":true,"values":[{"key":{"id":4,"text":"ssh-rsa
+        AAAAB3NzaC1yc2EAAAADAQABAAACAQDS+xjiG6p3DoF9wfnQpYjzcMpF1O4a9nxUWmR62oCBJxDkrwuuSpgx5NU5Z7AmjJsL911OjP8lAfL1g5mpPvb8rrsAra+4GVFywfxyMYJgOjLOOW5yQu4E8Ss40Ow3l3RaoV9noYKsVJtKL037W6T5q024oLb9+fW7suI440gC3tMeIMNGyGgv9x32aIh19F6xDwtc1B0CVdkrApNzBfiDHoeU5NxE5zzbUvoTbNDvKANzxc8Rcm7xf2VUTDqHFBUh1eknYYru+9GPKfFOIbHWg72hWgBFMpQfhAiTfCsaZhO953zbjd0eORjtCJA5y/TIumNIVKQc58fdp+8XrcCYiPWU6bMvRmEtXxKUYQRWp48nG6/R0RpVIbfXxo1IAXgl/DOIwZ7Slg9g/P+TxXYxPJJP2rPBsrwqgOQyrlE9FWnGUzx9wYLpjcl1U6G92hOeGxdVD0LJqJy3iUW7N8xIE0MlVJG/TsEji3FsjaJOOvYWNrlxNsPpyZFAKl3ivG6jFh2hCY4njea8yfMqFEbeInvq5M9evk0HBXGlBRqiNqxeF+O2yNp4vL4vepq9tvLSA4z/OTBGbFjwNV0XTxS422tYsRsq4TLErU+x8J97REY8UQyRklYFrhIUtJsolbsi7UvPXPtxNtinazTN7Hlh/lMCWWGvnGZWYnsGIzSPOQ==
+        MIGR8/hugo-pages access key","label":"MIGR8/hugo-pages access key"},"repository":{"slug":"hugo-pages","id":6,"name":"hugo-pages","scmId":"git","state":"AVAILABLE","statusMessage":"Available","forkable":true,"project":{"key":"MIGR8","id":2,"name":"Migrate
+        Me","description":"Test project description","public":false,"type":"NORMAL","links":{"self":[{"href":"https://example.com/projects/MIGR8"}]}},"public":false,"links":{"clone":[{"href":"ssh://git@example.com:7999/migr8/hugo-pages.git","name":"ssh"},{"href":"https://unit-test@example.com/scm/migr8/hugo-pages.git","name":"http"}],"self":[{"href":"https://example.com/projects/MIGR8/repos/hugo-pages/browse"}]}},"permission":"REPO_READ"},{"key":{"id":5,"text":"ssh-rsa
+        AAAAB3NzaC1yc2EAAAADAQABAAACAQDEcWk96kUOUJ8rpsxZi/cdC29A6AvJQ77hN6qk0Pgr0F7X9HnJ/TMrgJDeJW96sqtsYLqww30aBpldhFSurUw0osvOHw8xMiirwm28bJZKixscfKuzRz8yU0tY52v2RNcLoKoIzZftJpal/Uh6nefIlIaaXKtNg7jk+dQc107dFHltb/59OAHGyT45waITh3Jve+q+eLoERmubckQeYhgcHRA+kr/UJQgsT7ddaNmLXIcjX3uUG/AhuT2+pcULb3dmmceigxJ177fweba37fhy6PGk95XJ/zrx6Cb3BgiGMtKl06lZhLVI2w2hqkSZkz0wqV+NLCq0dO+4y0ct9YDUZUrlsjM3ZH01VyGMdmj/o76b9/reqcdOs5cNFQapPYLSFP05oAsntd7pLcNYJFGucLY1dQYbpRr4giSLcK2hgWfs6+i22NHPfWZyJqn95g9S/hud9jj1wq0CASKtRHeazMhqVsW9dDpH7dkA+Hm73PMGy+dJf5C+GIqZLCSMhDdySvSHXhdabOba90CnZT+U2v2p1P7n5z/w6QNv+6Bu7MP7gPJLkRUcOjCRDKkEsVof1g88maRTSnOBXXG3Cpoj/qsuQrTsaJM6M78ggcZx4aTwYouuzFrLLsnr2fj4RlRKG1QX9yabCqMeGXIc2NkoXeVarksEg5HFjv4UWOny8Q==
+        MIGR8/hugo-pages access key (r/w)\r\n","label":"MIGR8/hugo-pages access key
+        (r/w)"},"repository":{"slug":"hugo-pages","id":6,"name":"hugo-pages","scmId":"git","state":"AVAILABLE","statusMessage":"Available","forkable":true,"project":{"key":"MIGR8","id":2,"name":"Migrate
+        Me","description":"Test project description","public":false,"type":"NORMAL","links":{"self":[{"href":"https://example.com/projects/MIGR8"}]}},"public":false,"links":{"clone":[{"href":"ssh://git@example.com:7999/migr8/hugo-pages.git","name":"ssh"},{"href":"https://unit-test@example.com/scm/migr8/hugo-pages.git","name":"http"}],"self":[{"href":"https://example.com/projects/MIGR8/repos/hugo-pages/browse"}]}},"permission":"REPO_WRITE"}],"start":0}'
+    http_version: 
+  recorded_at: Wed, 24 Apr 2019 00:14:09 GMT
+recorded_with: VCR 3.0.3

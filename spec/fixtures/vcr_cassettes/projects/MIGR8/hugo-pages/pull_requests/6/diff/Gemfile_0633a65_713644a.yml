@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/pull-requests/6/diff/Gemfile?diffType=COMMIT&sinceId=0633a65a0d2865ebc045455d19c97602d7414120&untilId=713644a829b9c2f724ae04b22285aa78b5c5616a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Mon, 01 Jul 2019 23:43:19 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx1423x242289x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"fromHash":"0633a65a0d2865ebc045455d19c97602d7414120","toHash":"713644a829b9c2f724ae04b22285aa78b5c5616a","contextLines":10,"whitespace":"SHOW","diffs":[{"source":{"components":["Gemfile"],"parent":"","name":"Gemfile","toString":"Gemfile"},"destination":{"components":["Gemfile"],"parent":"","name":"Gemfile","toString":"Gemfile"},"hunks":[{"sourceLine":1,"sourceSpan":25,"destinationLine":1,"destinationSpan":23,"segments":[{"type":"CONTEXT","lines":[{"source":1,"destination":1,"line":"source
+        ''https://rubygems.org''","truncated":false,"commentIds":[54]},{"source":2,"destination":2,"line":"","truncated":false},{"source":3,"destination":3,"line":"gem
+        \"rails\",                 \"4.2.6\"","truncated":false,"commentIds":[49]},{"source":4,"destination":4,"line":"","truncated":false}],"truncated":false},{"type":"REMOVED","lines":[{"source":5,"destination":5,"line":"gem
+        \"coffee-rails\",          \"~> 4.1.0\"","truncated":false,"commentIds":[43]}],"truncated":false},{"type":"CONTEXT","lines":[{"source":6,"destination":5,"line":"gem
+        \"jbuilder\",              \"~> 2.0\"","truncated":false},{"source":7,"destination":6,"line":"gem
+        \"sass-rails\",            \"~> 5.0\"","truncated":false},{"source":8,"destination":7,"line":"gem
+        \"uglifier\",              \">= 1.3.0\"","truncated":false,"commentIds":[56]},{"source":9,"destination":8,"line":"","truncated":false,"commentIds":[57]},{"source":10,"destination":9,"line":"gem
+        \"octokit\",               \"4.3.0\"","truncated":false},{"source":11,"destination":10,"line":"gem
+        \"omniauth-github\",       \"1.1.2\"","truncated":false,"commentIds":[55]},{"source":12,"destination":11,"line":"gem
+        \"puma\",                  \"3.4.0\"","truncated":false,"commentIds":[58]},{"source":13,"destination":12,"line":"","truncated":false},{"source":14,"destination":13,"line":"group
+        :development, :test do","truncated":false}],"truncated":false},{"type":"REMOVED","lines":[{"source":15,"destination":14,"line":"  gem
+        \"byebug\"","truncated":false,"commentIds":[44]}],"truncated":false},{"type":"CONTEXT","lines":[{"source":16,"destination":14,"line":"  gem
+        \"dotenv-rails\"","truncated":false},{"source":17,"destination":15,"line":"  gem
+        \"rspec-rails\"","truncated":false},{"source":18,"destination":16,"line":"  gem
+        \"sqlite3\"","truncated":false,"commentIds":[59]},{"source":19,"destination":17,"line":"end","truncated":false},{"source":20,"destination":18,"line":"","truncated":false},{"source":21,"destination":19,"line":"group
+        :development do","truncated":false},{"source":22,"destination":20,"line":"  gem
+        \"web-console\", \"~> 2.0\"","truncated":false},{"source":23,"destination":21,"line":"  gem
+        \"spring\"","truncated":false},{"source":24,"destination":22,"line":"end","truncated":false},{"source":25,"destination":23,"line":"","truncated":false,"commentIds":[50]}],"truncated":false}],"truncated":false}],"truncated":false,"fileComments":[{"properties":{"repositoryId":6},"id":61,"version":1,"text":"File
+        comment.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1528325328411,"updatedDate":1528325342850,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}}],"lineComments":[{"properties":{"repositoryId":6},"id":54,"version":1,"text":"Comment
+        on line 1.\nThis comment should be moved to the context below.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1527277543164,"updatedDate":1527655616850,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}},{"properties":{"repositoryId":6},"id":49,"version":2,"text":"Comment
+        on line 3.\nThis comment should not be moved.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1525982546032,"updatedDate":1527655603413,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}},{"properties":{"repositoryId":6},"id":43,"version":1,"text":"Comment
+        on (removed) line 5.\nThis comment should not be moved.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1525981702143,"updatedDate":1527655586304,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}},{"properties":{"repositoryId":6},"id":56,"version":1,"text":"Comment
+        on line 8.\nThis comment should not be moved.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1527655660706,"updatedDate":1527655719452,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}},{"properties":{"repositoryId":6},"id":57,"version":0,"text":"Comment
+        on line 9.\nThis comment should be moved to the context above.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1527655687083,"updatedDate":1527655687083,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}},{"properties":{"repositoryId":6},"id":55,"version":1,"text":"Comment
+        on line 11.\nThis comment should be moved to the context below.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1527654076354,"updatedDate":1527655540331,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}},{"properties":{"repositoryId":6},"id":58,"version":0,"text":"Comment
+        on line 12.\nThis comment should not be moved.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1527655714577,"updatedDate":1527655714577,"comments":[{"properties":{"repositoryId":6},"id":67,"version":0,"text":"Reply
+        to comment on line 12.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1528414376860,"updatedDate":1528414376860,"comments":[{"properties":{"repositoryId":6},"id":68,"version":0,"text":"Reply
+        to reply to comment on line 12.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1528414387172,"updatedDate":1528414387172,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}}],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}},{"properties":{"repositoryId":6},"id":69,"version":0,"text":"Another
+        reply to comment on line 12.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1528414396289,"updatedDate":1528414396289,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}}],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}},{"properties":{"repositoryId":6},"id":44,"version":1,"text":"Comment
+        on (removed) line 15.\nThis comment should not be moved.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1525981715754,"updatedDate":1527655745789,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}},{"properties":{"repositoryId":6},"id":59,"version":0,"text":"Comment
+        on line 18.\nThis comment should not be moved.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1527655785073,"updatedDate":1527655785073,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}},{"properties":{"repositoryId":6},"id":50,"version":1,"text":"Comment
+        on line 25.\nThis comment should be moved to the context above.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1526574169129,"updatedDate":1527655763696,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}}]}],"truncated":false}'
+    http_version: 
+  recorded_at: Mon, 01 Jul 2019 23:43:19 GMT
+recorded_with: VCR 3.0.3

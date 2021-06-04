@@ -1,0 +1,174 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/pull-requests/6/diff/Gemfile?diffType=COMMIT&sinceId=0633a65a0d2865ebc045455d19c97602d7414120&untilId=713644a829b9c2f724ae04b22285aa78b5c5616a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept:
+      - "*/*"
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 23 Oct 2019 15:48:46 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx948x340624x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"fromHash":"0633a65a0d2865ebc045455d19c97602d7414120","toHash":"713644a829b9c2f724ae04b22285aa78b5c5616a","contextLines":10,"whitespace":"SHOW","diffs":[{"source":{"components":["Gemfile"],"parent":"","name":"Gemfile","toString":"Gemfile"},"destination":{"components":["Gemfile"],"parent":"","name":"Gemfile","toString":"Gemfile"},"hunks":[{"sourceLine":1,"sourceSpan":25,"destinationLine":1,"destinationSpan":23,"segments":[{"type":"CONTEXT","lines":[{"source":1,"destination":1,"line":"source
+        ''https://rubygems.org''","truncated":false},{"source":2,"destination":2,"line":"","truncated":false},{"source":3,"destination":3,"line":"gem
+        \"rails\",                 \"4.2.6\"","truncated":false},{"source":4,"destination":4,"line":"","truncated":false}],"truncated":false},{"type":"REMOVED","lines":[{"source":5,"destination":5,"line":"gem
+        \"coffee-rails\",          \"~> 4.1.0\"","truncated":false}],"truncated":false},{"type":"CONTEXT","lines":[{"source":6,"destination":5,"line":"gem
+        \"jbuilder\",              \"~> 2.0\"","truncated":false},{"source":7,"destination":6,"line":"gem
+        \"sass-rails\",            \"~> 5.0\"","truncated":false},{"source":8,"destination":7,"line":"gem
+        \"uglifier\",              \">= 1.3.0\"","truncated":false},{"source":9,"destination":8,"line":"","truncated":false},{"source":10,"destination":9,"line":"gem
+        \"octokit\",               \"4.3.0\"","truncated":false},{"source":11,"destination":10,"line":"gem
+        \"omniauth-github\",       \"1.1.2\"","truncated":false},{"source":12,"destination":11,"line":"gem
+        \"puma\",                  \"3.4.0\"","truncated":false},{"source":13,"destination":12,"line":"","truncated":false},{"source":14,"destination":13,"line":"group
+        :development, :test do","truncated":false}],"truncated":false},{"type":"REMOVED","lines":[{"source":15,"destination":14,"line":"  gem
+        \"byebug\"","truncated":false}],"truncated":false},{"type":"CONTEXT","lines":[{"source":16,"destination":14,"line":"  gem
+        \"dotenv-rails\"","truncated":false},{"source":17,"destination":15,"line":"  gem
+        \"rspec-rails\"","truncated":false},{"source":18,"destination":16,"line":"  gem
+        \"sqlite3\"","truncated":false},{"source":19,"destination":17,"line":"end","truncated":false},{"source":20,"destination":18,"line":"","truncated":false},{"source":21,"destination":19,"line":"group
+        :development do","truncated":false},{"source":22,"destination":20,"line":"  gem
+        \"web-console\", \"~> 2.0\"","truncated":false},{"source":23,"destination":21,"line":"  gem
+        \"spring\"","truncated":false},{"source":24,"destination":22,"line":"end","truncated":false},{"source":25,"destination":23,"line":"","truncated":false}],"truncated":false}],"truncated":false}],"truncated":false}],"truncated":false}'
+    http_version: 
+  recorded_at: Wed, 23 Oct 2019 15:48:46 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/pull-requests/6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept:
+      - "*/*"
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 23 Oct 2019 15:48:46 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx948x340625x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":6,"version":6,"title":"Remove two lines separated by 9 lines
+        of context.","state":"OPEN","open":true,"closed":false,"createdDate":1525981220347,"updatedDate":1562023407362,"fromRef":{"id":"refs/heads/context-lines-test","displayId":"context-lines-test","latestCommit":"112e299ef8f06f951dde8ce105aad0252180cde0","repository":{"slug":"hugo-pages","id":6,"name":"hugo-pages","scmId":"git","state":"AVAILABLE","statusMessage":"Available","forkable":true,"project":{"key":"MIGR8","id":2,"name":"Migrate
+        Me","description":"Test project description","public":false,"type":"NORMAL","links":{"self":[{"href":"https://example.com/projects/MIGR8"}]}},"public":false,"links":{"clone":[{"href":"ssh://git@example.com:7999/migr8/hugo-pages.git","name":"ssh"},{"href":"https://unit-test@example.com/scm/migr8/hugo-pages.git","name":"http"}],"self":[{"href":"https://example.com/projects/MIGR8/repos/hugo-pages/browse"}]}}},"toRef":{"id":"refs/heads/master","displayId":"master","latestCommit":"0a3d9216927256a854a219f3c7cdb757aee11dbc","repository":{"slug":"hugo-pages","id":6,"name":"hugo-pages","scmId":"git","state":"AVAILABLE","statusMessage":"Available","forkable":true,"project":{"key":"MIGR8","id":2,"name":"Migrate
+        Me","description":"Test project description","public":false,"type":"NORMAL","links":{"self":[{"href":"https://example.com/projects/MIGR8"}]}},"public":false,"links":{"clone":[{"href":"ssh://git@example.com:7999/migr8/hugo-pages.git","name":"ssh"},{"href":"https://unit-test@example.com/scm/migr8/hugo-pages.git","name":"http"}],"self":[{"href":"https://example.com/projects/MIGR8/repos/hugo-pages/browse"}]}}},"locked":false,"author":{"user":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}},"role":"AUTHOR","approved":false,"status":"UNAPPROVED"},"reviewers":[],"participants":[],"links":{"self":[{"href":"https://example.com/projects/MIGR8/repos/hugo-pages/pull-requests/6"}]}}'
+    http_version: 
+  recorded_at: Wed, 23 Oct 2019 15:48:46 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/commits/713644a829b9c2f724ae04b22285aa78b5c5616a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept:
+      - "*/*"
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 23 Oct 2019 15:48:46 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx948x340626x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"713644a829b9c2f724ae04b22285aa78b5c5616a","displayId":"713644a829b","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}},"authorTimestamp":1562023407000,"committer":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}},"committerTimestamp":1562023407000,"message":"Automatic
+        merge","parents":[{"id":"0633a65a0d2865ebc045455d19c97602d7414120","displayId":"0633a65a0d2","author":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"authorTimestamp":1560928931000,"committer":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"committerTimestamp":1560928931000,"message":"Add
+        octocat.png.","parents":[{"id":"6150ca7e1fd18c96e2907a4ba31880e8b2329459","displayId":"6150ca7e1fd"}]},{"id":"112e299ef8f06f951dde8ce105aad0252180cde0","displayId":"112e299ef8f","author":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"authorTimestamp":1562023400000,"committer":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"committerTimestamp":1562023400000,"message":"Add
+        octocat.png.","parents":[{"id":"ace0ddae7cc4f2967e9cefafdafb1aa5c65f3ea0","displayId":"ace0ddae7cc"}]}]}'
+    http_version: 
+  recorded_at: Wed, 23 Oct 2019 15:48:46 GMT
+recorded_with: VCR 5.0.0

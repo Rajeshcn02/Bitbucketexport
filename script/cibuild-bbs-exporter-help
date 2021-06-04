@@ -1,0 +1,15 @@
+#!/bin/bash
+
+script_dir=$(dirname "$0")
+source "$script_dir/cibuild-environment"
+
+docker_build base
+
+set +e
+
+output="$(docker_run base bundle exec exe/bbs-exporter --help 2>&1)"
+printf '%s\n' "$output"
+
+set -e
+
+[[ "$output" == *"Usage: bbs_exporter --out-file FILE.tar.gz --repository OWNER/REPO"* ]]

@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/admin/groups/more-members?context=stash-users&limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Thu, 02 May 2019 02:48:32 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx168x146118x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":25,"limit":250,"isLastPage":true,"values":[{"name":"dpmex4527","emailAddress":"dpmex4527@github.com","id":4,"displayName":"Daniel
+        Perez","active":true,"slug":"dpmex4527","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"lastAuthenticationTimestamp":1556750027004,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/dpmex4527"}]}},{"name":"has@weird\uD83C\uDF2Dcharacters","emailAddress":"has.characters@noreply.com","id":106,"displayName":"Has
+        Characters","active":true,"slug":"has_weird\uD83C\uDF2Dcharacters","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"lastAuthenticationTimestamp":1554842542915,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/has_weird%F0%9F%8C%ADcharacters"}]}},{"name":"has%weird\uD83C\uDF2Dcharacters","emailAddress":"weird.characterette@noreply.com","id":107,"displayName":"Weird
+        Characterette","active":true,"slug":"has_weird\uD83C\uDF2Dcharacters0","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/has_weird%F0%9F%8C%ADcharacters0"}]}},{"name":"kylemacey","emailAddress":"kylemacey@github.com","id":1,"displayName":"Kyle
+        Macey","active":true,"slug":"kylemacey","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"lastAuthenticationTimestamp":1538519669309,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/kylemacey"}]}},{"name":"larsxschneider","emailAddress":"noreply@github.com","id":108,"displayName":"Lars
+        Schneider","active":true,"slug":"larsxschneider","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"lastAuthenticationTimestamp":1555684905816,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/larsxschneider"}]}},{"name":"mattcantstop","emailAddress":"mattcantstop@github.com","id":3,"displayName":"Matt
+        Duff","active":true,"slug":"mattcantstop","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"lastAuthenticationTimestamp":1495119205187,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/mattcantstop"}]}},{"name":"michaelsainz","emailAddress":"michaelsainz@github.com","id":33,"displayName":"Michael
+        Sainz","active":true,"slug":"michaelsainz","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"lastAuthenticationTimestamp":1517788836851,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/michaelsainz"}]}},{"name":"migarjo","emailAddress":"migarjo@github.com","id":5,"displayName":"Michael
+        Jackson \uD83D\uDD7A\uD83C\uDFFB","active":true,"slug":"migarjo","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"lastAuthenticationTimestamp":1495049763184,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/migarjo"}]}},{"name":"primetheus","emailAddress":"primetheus@github.com","id":32,"displayName":"Jared
+        Murrell","active":true,"slug":"primetheus","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"lastAuthenticationTimestamp":1511989879594,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/primetheus"}]}},{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"lastAuthenticationTimestamp":1556735874244,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/synthead"}]}},{"name":"tambling","emailAddress":"tambling@github.com","id":103,"displayName":"Dean
+        Tambling","active":true,"slug":"tambling","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"lastAuthenticationTimestamp":1544732171539,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/tambling"}]}},{"name":"test123","emailAddress":"dpmex4527+testing@github.com","id":6,"displayName":"Think
+        Displayname","active":true,"slug":"test123","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/test123"}]}},{"name":"testUser1","emailAddress":"mattcantstop+1@github.com","id":7,"displayName":"Test
+        User 1","active":true,"slug":"testuser1","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"lastAuthenticationTimestamp":1556252109035,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/testuser1"}]}},{"name":"testUser10","emailAddress":"mattcantstop+10@github.com","id":16,"displayName":"Test
+        User 10","active":true,"slug":"testuser10","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/testuser10"}]}},{"name":"testUser11","emailAddress":"mattcantstop+11@github.com","id":17,"displayName":"Test
+        User 11","active":true,"slug":"testuser11","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/testuser11"}]}},{"name":"testUser12","emailAddress":"mattcantstop+12@github.com","id":18,"displayName":"Test
+        User 12","active":true,"slug":"testuser12","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/testuser12"}]}},{"name":"testUser2","emailAddress":"mattcantstop+2@gmail.com","id":8,"displayName":"Test
+        User 2","active":true,"slug":"testuser2","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/testuser2"}]}},{"name":"testUser3","emailAddress":"mattcantstop+3@github.com","id":9,"displayName":"Test
+        User 3","active":true,"slug":"testuser3","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/testuser3"}]}},{"name":"testUser4","emailAddress":"mattcantstop+4@github.com","id":10,"displayName":"Test
+        User 4","active":true,"slug":"testuser4","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/testuser4"}]}},{"name":"testUser5","emailAddress":"mattcantstop+5@github.com","id":11,"displayName":"Test
+        User 5","active":true,"slug":"testuser5","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/testuser5"}]}},{"name":"testUser6","emailAddress":"mattcantstop+6@github.com","id":12,"displayName":"Test
+        User 6","active":true,"slug":"testuser6","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/testuser6"}]}},{"name":"testUser7","emailAddress":"mattcantstop+7@github.com","id":13,"displayName":"Test
+        User 7","active":true,"slug":"testuser7","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/testuser7"}]}},{"name":"testUser8","emailAddress":"mattcantstop+8@github.com","id":14,"displayName":"Test
+        User 8","active":true,"slug":"testuser8","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/testuser8"}]}},{"name":"testUser9","emailAddress":"mattcantstop+9@github.com","id":15,"displayName":"Test
+        User 9","active":true,"slug":"testuser9","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/testuser9"}]}},{"name":"unit-test","emailAddress":"unit-test@github.com","id":55,"displayName":"Unit
+        Test","active":true,"slug":"unit-test","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"lastAuthenticationTimestamp":1556765312416,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/unit-test"}]}}],"start":0}'
+    http_version: 
+  recorded_at: Thu, 02 May 2019 02:48:32 GMT
+recorded_with: VCR 3.0.3

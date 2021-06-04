@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/branches?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 19 Jul 2019 23:56:43 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx1436x261477x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":23,"limit":250,"isLastPage":true,"values":[{"id":"refs/heads/commit-comment-not-master","displayId":"commit-comment-not-master","type":"BRANCH","latestCommit":"2b912a8ca196cd92cd351ef4fba52e5cedbfb734","latestChangeset":"2b912a8ca196cd92cd351ef4fba52e5cedbfb734","isDefault":false},{"id":"refs/heads/context-lines-test","displayId":"context-lines-test","type":"BRANCH","latestCommit":"112e299ef8f06f951dde8ce105aad0252180cde0","latestChangeset":"112e299ef8f06f951dde8ce105aad0252180cde0","isDefault":false},{"id":"refs/heads/pr-with-binary-file","displayId":"pr-with-binary-file","type":"BRANCH","latestCommit":"95ae6d5909d44a22b3df82040f1bf0c8387aad51","latestChangeset":"95ae6d5909d44a22b3df82040f1bf0c8387aad51","isDefault":false},{"id":"refs/heads/master","displayId":"master","type":"BRANCH","latestCommit":"0633a65a0d2865ebc045455d19c97602d7414120","latestChangeset":"0633a65a0d2865ebc045455d19c97602d7414120","isDefault":true},{"id":"refs/heads/attachments-in-comments","displayId":"attachments-in-comments","type":"BRANCH","latestCommit":"268576529491c67f19db1af0fd2906cee0abb1f2","latestChangeset":"268576529491c67f19db1af0fd2906cee0abb1f2","isDefault":false},{"id":"refs/heads/comment-on-removed-commit","displayId":"comment-on-removed-commit","type":"BRANCH","latestCommit":"f6dafe7e502222499c285e24c20c01ad5789be12","latestChangeset":"f6dafe7e502222499c285e24c20c01ad5789be12","isDefault":false},{"id":"refs/heads/test-pr","displayId":"test-pr","type":"BRANCH","latestCommit":"cab4b7ed6e2355d7dae94c94609f482f842e20b4","latestChangeset":"cab4b7ed6e2355d7dae94c94609f482f842e20b4","isDefault":false},{"id":"refs/heads/update-bundle-to-1.16.2","displayId":"update-bundle-to-1.16.2","type":"BRANCH","latestCommit":"3cb7e5514a330fca5fc3b1c8b32883fe2ff813a9","latestChangeset":"3cb7e5514a330fca5fc3b1c8b32883fe2ff813a9","isDefault":false},{"id":"refs/heads/pr-comment-test","displayId":"pr-comment-test","type":"BRANCH","latestCommit":"e11596878774727839c640881b028ca5c0a96841","latestChangeset":"e11596878774727839c640881b028ca5c0a96841","isDefault":false},{"id":"refs/heads/bugfix/branch-permissions-test","displayId":"bugfix/branch-permissions-test","type":"BRANCH","latestCommit":"3f196110a84594a89c87864a1a93acc49db8db94","latestChangeset":"3f196110a84594a89c87864a1a93acc49db8db94","isDefault":false},{"id":"refs/heads/perm-test2","displayId":"perm-test2","type":"BRANCH","latestCommit":"717a584bff1380749b360b362db8c04ae194aaca","latestChangeset":"717a584bff1380749b360b362db8c04ae194aaca","isDefault":false},{"id":"refs/heads/bugfix/that/cool/perm-test","displayId":"bugfix/that/cool/perm-test","type":"BRANCH","latestCommit":"9c464a04ae939523f8a88122a09dadeaee2b5606","latestChangeset":"9c464a04ae939523f8a88122a09dadeaee2b5606","isDefault":false},{"id":"refs/heads/bugfix/perm-test","displayId":"bugfix/perm-test","type":"BRANCH","latestCommit":"59777e035d3371027513b0e483d53bb7d9143627","latestChangeset":"59777e035d3371027513b0e483d53bb7d9143627","isDefault":false},{"id":"refs/heads/perm-test","displayId":"perm-test","type":"BRANCH","latestCommit":"99349343681b819fc4ce962796be202c0a19d8c4","latestChangeset":"99349343681b819fc4ce962796be202c0a19d8c4","isDefault":false},{"id":"refs/heads/test-pr3","displayId":"test-pr3","type":"BRANCH","latestCommit":"a0b4cc70a65dadcad4e15e29638679b958107e5a","latestChangeset":"a0b4cc70a65dadcad4e15e29638679b958107e5a","isDefault":false},{"id":"refs/heads/no-commits","displayId":"no-commits","type":"BRANCH","latestCommit":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","latestChangeset":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","isDefault":false},{"id":"refs/heads/bugfix/some-other-perm-test","displayId":"bugfix/some-other-perm-test","type":"BRANCH","latestCommit":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","latestChangeset":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","isDefault":false},{"id":"refs/heads/bugfix/branch-permissions-test2","displayId":"bugfix/branch-permissions-test2","type":"BRANCH","latestCommit":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","latestChangeset":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","isDefault":false},{"id":"refs/heads/branch-permissions-test","displayId":"branch-permissions-test","type":"BRANCH","latestCommit":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","latestChangeset":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","isDefault":false},{"id":"refs/heads/test-commit-comments","displayId":"test-commit-comments","type":"BRANCH","latestCommit":"2d26b4300e6b7d2047690d67ffca167222b41b31","latestChangeset":"2d26b4300e6b7d2047690d67ffca167222b41b31","isDefault":false},{"id":"refs/heads/fp-pr","displayId":"fp-pr","type":"BRANCH","latestCommit":"542aed8ddc52388ce24212a74ecba6a511a9a763","latestChangeset":"542aed8ddc52388ce24212a74ecba6a511a9a763","isDefault":false},{"id":"refs/heads/omniauth-login","displayId":"omniauth-login","type":"BRANCH","latestCommit":"c222af415ecc78c644c139cbf5eb44a25205cbad","latestChangeset":"c222af415ecc78c644c139cbf5eb44a25205cbad","isDefault":false},{"id":"refs/heads/test-branch","displayId":"test-branch","type":"BRANCH","latestCommit":"a7c109c372ca8869b22350f2977cf75334d6bf57","latestChangeset":"a7c109c372ca8869b22350f2977cf75334d6bf57","isDefault":false}],"start":0}'
+    http_version: 
+  recorded_at: Fri, 19 Jul 2019 23:56:43 GMT
+recorded_with: VCR 3.0.3

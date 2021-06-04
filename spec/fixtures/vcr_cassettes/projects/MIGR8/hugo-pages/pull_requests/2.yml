@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/pull-requests/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 24 Apr 2019 00:14:08 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx14x141118x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":2,"version":2,"title":"Updated readme to test PR''s in Bitbucket
+        Server round2","description":"more PR''s for testing","state":"MERGED","open":false,"closed":true,"createdDate":1496247225853,"updatedDate":1496247237320,"closedDate":1496247237320,"fromRef":{"id":"refs/heads/test-pr2","displayId":"test-pr2","latestCommit":"fe8582b9c7f6eb8ecf5cd5a26e5ef841e3b3efdb","repository":{"slug":"hugo-pages","id":6,"name":"hugo-pages","scmId":"git","state":"AVAILABLE","statusMessage":"Available","forkable":true,"project":{"key":"MIGR8","id":2,"name":"Migrate
+        Me","description":"Test project description","public":false,"type":"NORMAL","links":{"self":[{"href":"https://example.com/projects/MIGR8"}]}},"public":false,"links":{"clone":[{"href":"ssh://git@example.com:7999/migr8/hugo-pages.git","name":"ssh"},{"href":"https://unit-test@example.com/scm/migr8/hugo-pages.git","name":"http"}],"self":[{"href":"https://example.com/projects/MIGR8/repos/hugo-pages/browse"}]}}},"toRef":{"id":"refs/heads/master","displayId":"master","latestCommit":"fc40f8230aab1a10e16c70b2706e2d2a6164eea0","repository":{"slug":"hugo-pages","id":6,"name":"hugo-pages","scmId":"git","state":"AVAILABLE","statusMessage":"Available","forkable":true,"project":{"key":"MIGR8","id":2,"name":"Migrate
+        Me","description":"Test project description","public":false,"type":"NORMAL","links":{"self":[{"href":"https://example.com/projects/MIGR8"}]}},"public":false,"links":{"clone":[{"href":"ssh://git@example.com:7999/migr8/hugo-pages.git","name":"ssh"},{"href":"https://unit-test@example.com/scm/migr8/hugo-pages.git","name":"http"}],"self":[{"href":"https://example.com/projects/MIGR8/repos/hugo-pages/browse"}]}}},"locked":false,"author":{"user":{"name":"dpmex4527","emailAddress":"dpmex4527@github.com","id":4,"displayName":"Daniel
+        Perez","active":true,"slug":"dpmex4527","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/dpmex4527"}]}},"role":"AUTHOR","approved":false,"status":"UNAPPROVED"},"reviewers":[{"user":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}},"role":"REVIEWER","approved":false,"status":"UNAPPROVED"},{"user":{"name":"kylemacey","emailAddress":"kylemacey@github.com","id":1,"displayName":"Kyle
+        Macey","active":true,"slug":"kylemacey","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/kylemacey"}]}},"role":"REVIEWER","approved":false,"status":"UNAPPROVED"}],"participants":[],"links":{"self":[{"href":"https://example.com/projects/MIGR8/repos/hugo-pages/pull-requests/2"}]}}'
+    http_version: 
+  recorded_at: Wed, 24 Apr 2019 00:14:08 GMT
+recorded_with: VCR 3.0.3

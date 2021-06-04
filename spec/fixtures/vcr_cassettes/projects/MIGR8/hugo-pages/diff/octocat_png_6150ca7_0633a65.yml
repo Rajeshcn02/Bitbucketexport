@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/commits/0633a65a0d2865ebc045455d19c97602d7414120/diff?since=6150ca7e1fd18c96e2907a4ba31880e8b2329459
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Mon, 01 Jul 2019 22:13:55 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx1333x242164x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"fromHash":"6150ca7e1fd18c96e2907a4ba31880e8b2329459","toHash":"0633a65a0d2865ebc045455d19c97602d7414120","contextLines":10,"whitespace":"SHOW","diffs":[{"source":null,"destination":{"components":["octocat.png"],"parent":"","name":"octocat.png","extension":"png","toString":"octocat.png"},"binary":true,"fileComments":[{"properties":{"repositoryId":6},"id":148,"version":0,"text":"Commit
+        comment on binary file.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1560928969648,"updatedDate":1560928969648,"comments":[{"properties":{"repositoryId":6},"id":154,"version":0,"text":"Reply
+        to commit comment on binary file.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1561998790587,"updatedDate":1561998790587,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}}],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}}]}],"truncated":false}'
+    http_version: 
+  recorded_at: Mon, 01 Jul 2019 22:13:55 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/commits/1490680b9a193ff188eb0dff7281b29869c62937
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 24 Apr 2019 00:14:09 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx14x141120x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"1490680b9a193ff188eb0dff7281b29869c62937","displayId":"1490680b9a1","author":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"authorTimestamp":1462885570000,"committer":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"committerTimestamp":1462885570000,"message":"Choose
+        my scopes","parents":[{"id":"27c44637e863f719c071d961ab42a6afc041e034","displayId":"27c44637e86","author":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"authorTimestamp":1462885227000,"committer":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"committerTimestamp":1462885227000,"message":"Configure
+        oauth","parents":[{"id":"0b5f5672a032c7248140440609c73305f57b295b","displayId":"0b5f5672a03"}]}]}'
+    http_version: 
+  recorded_at: Wed, 24 Apr 2019 00:14:09 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,163 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/pull-requests/11/diff/README.md?diffType=COMMIT&sinceId=0633a65a0d2865ebc045455d19c97602d7414120&untilId=70fd67684a9315f90874a3f4514f00872362875f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept:
+      - "*/*"
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 23 Oct 2019 15:48:49 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx948x340631x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"fromHash":"0633a65a0d2865ebc045455d19c97602d7414120","toHash":"70fd67684a9315f90874a3f4514f00872362875f","contextLines":10,"whitespace":"SHOW","diffs":[{"source":{"components":["README.md"],"parent":"","name":"README.md","extension":"md","toString":"README.md"},"destination":{"components":["README.md"],"parent":"","name":"README.md","extension":"md","toString":"README.md"},"hunks":[{"context":"through
+        the steps to configure it.","sourceLine":5,"sourceSpan":11,"destinationLine":5,"destinationSpan":15,"segments":[{"type":"CONTEXT","lines":[{"source":5,"destination":5,"line":"","truncated":false},{"source":6,"destination":6,"line":"[![Deploy
+        to Heroku](https://cdn.herokuapp.com/deploy/button.svg)](https://heroku.com/deploy)","truncated":false},{"source":7,"destination":7,"line":"","truncated":false},{"source":8,"destination":8,"line":"Next,
+        create a GitHub repository and add a hugo-pages branch to it.","truncated":false},{"source":9,"destination":9,"line":"See
+        [this repository''s hugo-pages branch](https://github.com/spraints/hugo-pages/tree/hugo-pages)","truncated":false},{"source":10,"destination":10,"line":"for
+        an example.","truncated":false},{"source":11,"destination":11,"line":"","truncated":false},{"source":12,"destination":12,"line":"Finally,
+        visit your GitHub Pages site! For example, see","truncated":false},{"source":13,"destination":13,"line":"[http://pickardayune.com/hugo-pages](http://spraints.github.io/hugo-pages).","truncated":false},{"source":14,"destination":14,"line":"","truncated":false}],"truncated":false},{"type":"ADDED","lines":[{"source":15,"destination":15,"line":"<<<<<<<","truncated":false,"conflictMarker":"MARKER"}],"truncated":false},{"type":"CONTEXT","lines":[{"source":15,"destination":16,"line":"testing","truncated":false,"conflictMarker":"OURS"}],"truncated":false},{"type":"ADDED","lines":[{"source":16,"destination":17,"line":"=======","truncated":false,"conflictMarker":"MARKER"},{"source":16,"destination":18,"line":"tester","truncated":false,"conflictMarker":"THEIRS"},{"source":16,"destination":19,"line":">>>>>>>","truncated":false,"conflictMarker":"MARKER"}],"truncated":false}],"truncated":false}],"truncated":false}],"truncated":false}'
+    http_version: 
+  recorded_at: Wed, 23 Oct 2019 15:48:49 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/pull-requests/11
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept:
+      - "*/*"
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 23 Oct 2019 15:48:49 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx948x340632x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":11,"version":2,"title":"PR with PR review comments on a merge
+        conflict","state":"OPEN","open":true,"closed":false,"createdDate":1563928999233,"updatedDate":1563929038310,"fromRef":{"id":"refs/heads/pr-review-comment-on-merge-conflict","displayId":"pr-review-comment-on-merge-conflict","latestCommit":"8e08a671dd313c843082b4aba12fa571796a9d3c","repository":{"slug":"hugo-pages","id":6,"name":"hugo-pages","scmId":"git","state":"AVAILABLE","statusMessage":"Available","forkable":true,"project":{"key":"MIGR8","id":2,"name":"Migrate
+        Me","description":"Test project description","public":false,"type":"NORMAL","links":{"self":[{"href":"https://example.com/projects/MIGR8"}]}},"public":false,"links":{"clone":[{"href":"ssh://git@example.com:7999/migr8/hugo-pages.git","name":"ssh"},{"href":"https://unit-test@example.com/scm/migr8/hugo-pages.git","name":"http"}],"self":[{"href":"https://example.com/projects/MIGR8/repos/hugo-pages/browse"}]}}},"toRef":{"id":"refs/heads/master","displayId":"master","latestCommit":"0a3d9216927256a854a219f3c7cdb757aee11dbc","repository":{"slug":"hugo-pages","id":6,"name":"hugo-pages","scmId":"git","state":"AVAILABLE","statusMessage":"Available","forkable":true,"project":{"key":"MIGR8","id":2,"name":"Migrate
+        Me","description":"Test project description","public":false,"type":"NORMAL","links":{"self":[{"href":"https://example.com/projects/MIGR8"}]}},"public":false,"links":{"clone":[{"href":"ssh://git@example.com:7999/migr8/hugo-pages.git","name":"ssh"},{"href":"https://unit-test@example.com/scm/migr8/hugo-pages.git","name":"http"}],"self":[{"href":"https://example.com/projects/MIGR8/repos/hugo-pages/browse"}]}}},"locked":false,"author":{"user":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}},"role":"AUTHOR","approved":false,"status":"UNAPPROVED"},"reviewers":[],"participants":[],"links":{"self":[{"href":"https://example.com/projects/MIGR8/repos/hugo-pages/pull-requests/11"}]}}'
+    http_version: 
+  recorded_at: Wed, 23 Oct 2019 15:48:49 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/commits/70fd67684a9315f90874a3f4514f00872362875f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept:
+      - "*/*"
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 23 Oct 2019 15:48:50 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx948x340633x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"70fd67684a9315f90874a3f4514f00872362875f","displayId":"70fd67684a9","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}},"authorTimestamp":1563929000000,"committer":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}},"committerTimestamp":1563929000000,"message":"Automatic
+        merge","parents":[{"id":"0633a65a0d2865ebc045455d19c97602d7414120","displayId":"0633a65a0d2","author":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"authorTimestamp":1560928931000,"committer":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"committerTimestamp":1560928931000,"message":"Add
+        octocat.png.","parents":[{"id":"6150ca7e1fd18c96e2907a4ba31880e8b2329459","displayId":"6150ca7e1fd"}]},{"id":"8e08a671dd313c843082b4aba12fa571796a9d3c","displayId":"8e08a671dd3","author":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"authorTimestamp":1563928952000,"committer":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"committerTimestamp":1563928952000,"message":"Create
+        merge conflict in README.md.","parents":[{"id":"b973fdcba0f85bf8556630d02ad9d6bef966a61e","displayId":"b973fdcba0f"}]}]}'
+    http_version: 
+  recorded_at: Wed, 23 Oct 2019 15:48:50 GMT
+recorded_with: VCR 5.0.0

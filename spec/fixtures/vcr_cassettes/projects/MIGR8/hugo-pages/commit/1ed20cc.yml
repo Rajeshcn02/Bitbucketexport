@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/commits/1ed20cc335aa761425d8dd3543fd52f866f5d6a2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 24 Apr 2019 00:14:07 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx14x141111x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"1ed20cc335aa761425d8dd3543fd52f866f5d6a2","displayId":"1ed20cc335a","author":{"name":"dpmex4527","emailAddress":"dpmex4527@github.com","id":4,"displayName":"Daniel
+        Perez","active":true,"slug":"dpmex4527","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/dpmex4527"}]}},"authorTimestamp":1555957288000,"committer":{"name":"dpmex4527","emailAddress":"dpmex4527@github.com","id":4,"displayName":"Daniel
+        Perez","active":true,"slug":"dpmex4527","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/dpmex4527"}]}},"committerTimestamp":1555957288000,"message":"Automatic
+        merge","parents":[{"id":"9b14a132c4f6f27b1ef4bee034f79151d434756a","displayId":"9b14a132c4f","author":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"authorTimestamp":1555957288000,"committer":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"committerTimestamp":1555957288000,"message":"Merge
+        pull request #7 in MIGR8/hugo-pages from update-bundle-to-1.16.2 to master\n\n*
+        commit ''3cb7e5514a330fca5fc3b1c8b32883fe2ff813a9'':\n  Update Bundle to 1.16.2.","parents":[{"id":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","displayId":"87fabe1ef09"},{"id":"3cb7e5514a330fca5fc3b1c8b32883fe2ff813a9","displayId":"3cb7e5514a3"}]},{"id":"98bb7937d0bf95f194d52ac05352f3546b6240e8","displayId":"98bb7937d0b","author":{"name":"Daniel
+        Perez","emailAddress":"dpmex4527@github.com"},"authorTimestamp":1495567558000,"committer":{"name":"Daniel
+        Perez","emailAddress":"dpmex4527@github.com"},"committerTimestamp":1495567558000,"message":"Updated
+        readme to test PR''s in Bitbucket Server","parents":[{"id":"fc40f8230aab1a10e16c70b2706e2d2a6164eea0","displayId":"fc40f8230aa"}]}]}'
+    http_version: 
+  recorded_at: Wed, 24 Apr 2019 00:14:07 GMT
+recorded_with: VCR 3.0.3

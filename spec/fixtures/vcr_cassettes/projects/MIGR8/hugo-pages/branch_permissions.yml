@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/branch-permissions/2.0/projects/MIGR8/repos/hugo-pages/restrictions?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 24 Apr 2019 00:14:05 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx14x141103x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":8,"limit":250,"isLastPage":true,"values":[{"id":109,"scope":{"type":"REPOSITORY","resourceId":6},"type":"pull-request-only","matcher":{"id":"refs/heads/bugfix/branch-permissions-test","displayId":"bugfix/branch-permissions-test","type":{"id":"BRANCH","name":"Branch"},"active":true},"users":[{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}}],"groups":["test_group"],"accessKeys":[]},{"id":110,"scope":{"type":"REPOSITORY","resourceId":6},"type":"read-only","matcher":{"id":"refs/heads/bugfix/branch-permissions-test2","displayId":"bugfix/branch-permissions-test2","type":{"id":"BRANCH","name":"Branch"},"active":true},"users":[],"groups":[],"accessKeys":[]},{"id":108,"scope":{"type":"REPOSITORY","resourceId":6},"type":"read-only","matcher":{"id":"refs/heads/bugfix/that/cool/perm-test","displayId":"bugfix/that/cool/perm-test","type":{"id":"BRANCH","name":"Branch"},"active":true},"users":[],"groups":[],"accessKeys":[]},{"id":106,"scope":{"type":"REPOSITORY","resourceId":6},"type":"fast-forward-only","matcher":{"id":"development","displayId":"Development","type":{"id":"MODEL_BRANCH","name":"Branching
+        model branch"},"active":true},"users":[],"groups":[],"accessKeys":[]},{"id":117,"scope":{"type":"REPOSITORY","resourceId":6},"type":"pull-request-only","matcher":{"id":"production","displayId":"Production","type":{"id":"MODEL_BRANCH","name":"Branching
+        model branch"},"active":true},"users":[{"name":"kylemacey","emailAddress":"kylemacey@github.com","id":1,"displayName":"Kyle
+        Macey","active":true,"slug":"kylemacey","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/kylemacey"}]}},{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}}],"groups":[],"accessKeys":[]},{"id":107,"scope":{"type":"REPOSITORY","resourceId":6},"type":"fast-forward-only","matcher":{"id":"BUGFIX","displayId":"Bugfix","type":{"id":"MODEL_CATEGORY","name":"Branching
+        model category"},"active":true},"users":[],"groups":[],"accessKeys":[]},{"id":114,"scope":{"type":"REPOSITORY","resourceId":6},"type":"pull-request-only","matcher":{"id":"branch-permissions-tes?","displayId":"branch-permissions-tes?","type":{"id":"PATTERN","name":"Pattern"},"active":true},"users":[{"name":"kylemacey","emailAddress":"kylemacey@github.com","id":1,"displayName":"Kyle
+        Macey","active":true,"slug":"kylemacey","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/kylemacey"}]}}],"groups":[],"accessKeys":[]},{"id":113,"scope":{"type":"REPOSITORY","resourceId":6},"type":"read-only","matcher":{"id":"branch-permissions-tes?","displayId":"branch-permissions-tes?","type":{"id":"PATTERN","name":"Pattern"},"active":true},"users":[{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}}],"groups":["test_group"],"accessKeys":[]}],"start":0}'
+    http_version: 
+  recorded_at: Wed, 24 Apr 2019 00:14:05 GMT
+recorded_with: VCR 3.0.3

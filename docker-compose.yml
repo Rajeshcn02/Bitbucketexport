@@ -1,0 +1,18 @@
+version: "3.5"
+
+services:
+  base:
+    image: bbs-exporter:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      cache_from:
+        - octofactory.service.private-us-east-1.github.net/github-golden-docker/github-bbs-exporter:bbs-exporter-latest
+
+  test:
+    image: bbs-exporter-test:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+      cache_from:
+        - octofactory.service.private-us-east-1.github.net/github-golden-docker/github-bbs-exporter:bbs-exporter-test-latest

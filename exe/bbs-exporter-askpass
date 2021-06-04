@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ -n "$BITBUCKET_SERVER_API_TOKEN" ]; then
+  printf '%s' "$BITBUCKET_SERVER_API_TOKEN"
+else
+  printf '%s' "$BITBUCKET_SERVER_API_PASSWORD"
+fi

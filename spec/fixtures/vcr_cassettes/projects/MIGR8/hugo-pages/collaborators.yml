@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/permissions/users?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 24 Apr 2019 00:14:09 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx14x141123x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":18,"limit":250,"isLastPage":true,"values":[{"user":{"name":"dpmex4527","emailAddress":"dpmex4527@github.com","id":4,"displayName":"Daniel
+        Perez","active":true,"slug":"dpmex4527","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/dpmex4527"}]}},"permission":"REPO_ADMIN"},{"user":{"name":"kylemacey","emailAddress":"kylemacey@github.com","id":1,"displayName":"Kyle
+        Macey","active":true,"slug":"kylemacey","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/kylemacey"}]}},"permission":"REPO_ADMIN"},{"user":{"name":"mattcantstop","emailAddress":"mattcantstop@github.com","id":3,"displayName":"Matt
+        Duff","active":true,"slug":"mattcantstop","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/mattcantstop"}]}},"permission":"REPO_ADMIN"},{"user":{"name":"migarjo","emailAddress":"migarjo@github.com","id":5,"displayName":"Michael
+        Jackson \uD83D\uDD7A\uD83C\uDFFB","active":true,"slug":"migarjo","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/migarjo"}]}},"permission":"REPO_ADMIN"},{"user":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}},"permission":"REPO_ADMIN"},{"user":{"name":"test123","emailAddress":"dpmex4527+testing@github.com","id":6,"displayName":"Think
+        Displayname","active":true,"slug":"test123","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/test123"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser1","emailAddress":"mattcantstop+1@github.com","id":7,"displayName":"Test
+        User 1","active":true,"slug":"testuser1","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser1"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser10","emailAddress":"mattcantstop+10@github.com","id":16,"displayName":"Test
+        User 10","active":true,"slug":"testuser10","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser10"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser11","emailAddress":"mattcantstop+11@github.com","id":17,"displayName":"Test
+        User 11","active":true,"slug":"testuser11","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser11"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser12","emailAddress":"mattcantstop+12@github.com","id":18,"displayName":"Test
+        User 12","active":true,"slug":"testuser12","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser12"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser2","emailAddress":"mattcantstop+2@gmail.com","id":8,"displayName":"Test
+        User 2","active":true,"slug":"testuser2","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser2"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser3","emailAddress":"mattcantstop+3@github.com","id":9,"displayName":"Test
+        User 3","active":true,"slug":"testuser3","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser3"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser4","emailAddress":"mattcantstop+4@github.com","id":10,"displayName":"Test
+        User 4","active":true,"slug":"testuser4","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser4"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser5","emailAddress":"mattcantstop+5@github.com","id":11,"displayName":"Test
+        User 5","active":true,"slug":"testuser5","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser5"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser6","emailAddress":"mattcantstop+6@github.com","id":12,"displayName":"Test
+        User 6","active":true,"slug":"testuser6","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser6"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser7","emailAddress":"mattcantstop+7@github.com","id":13,"displayName":"Test
+        User 7","active":true,"slug":"testuser7","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser7"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser8","emailAddress":"mattcantstop+8@github.com","id":14,"displayName":"Test
+        User 8","active":true,"slug":"testuser8","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser8"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser9","emailAddress":"mattcantstop+9@github.com","id":15,"displayName":"Test
+        User 9","active":true,"slug":"testuser9","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser9"}]}},"permission":"REPO_READ"}],"start":0}'
+    http_version: 
+  recorded_at: Wed, 24 Apr 2019 00:14:09 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,10 @@
+*.md
+.dockerignore
+.git
+.github
+.gitignore
+Dockerfile*
+docker-compose.yml
+script/cibuild*
+temp
+tmp

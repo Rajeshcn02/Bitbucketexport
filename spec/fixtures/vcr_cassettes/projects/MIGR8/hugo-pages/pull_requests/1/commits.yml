@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/pull-requests/1/commits?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 24 Apr 2019 00:14:07 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx14x141112x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"values":[{"id":"cab4b7ed6e2355d7dae94c94609f482f842e20b4","displayId":"cab4b7ed6e2","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"authorTimestamp":1555975462000,"committer":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"committerTimestamp":1555975462000,"message":"Replace
+        test with testing in README.md.","parents":[{"id":"b973fdcba0f85bf8556630d02ad9d6bef966a61e","displayId":"b973fdcba0f"}]},{"id":"b973fdcba0f85bf8556630d02ad9d6bef966a61e","displayId":"b973fdcba0f","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"authorTimestamp":1555975351000,"committer":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"committerTimestamp":1555975351000,"message":"Merge
+        branch ''master'' into test-pr","parents":[{"id":"98bb7937d0bf95f194d52ac05352f3546b6240e8","displayId":"98bb7937d0b"},{"id":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","displayId":"87fabe1ef09"}]},{"id":"98bb7937d0bf95f194d52ac05352f3546b6240e8","displayId":"98bb7937d0b","author":{"name":"dpmex4527","emailAddress":"dpmex4527@github.com","id":4,"displayName":"Daniel
+        Perez","active":true,"slug":"dpmex4527","type":"NORMAL"},"authorTimestamp":1495567558000,"committer":{"name":"dpmex4527","emailAddress":"dpmex4527@github.com","id":4,"displayName":"Daniel
+        Perez","active":true,"slug":"dpmex4527","type":"NORMAL"},"committerTimestamp":1495567558000,"message":"Updated
+        readme to test PR''s in Bitbucket Server","parents":[{"id":"fc40f8230aab1a10e16c70b2706e2d2a6164eea0","displayId":"fc40f8230aa"}],"properties":{"commentCount":2}}],"size":3,"isLastPage":true,"start":0,"limit":250,"nextPageStart":null}'
+    http_version: 
+  recorded_at: Wed, 24 Apr 2019 00:14:07 GMT
+recorded_with: VCR 3.0.3

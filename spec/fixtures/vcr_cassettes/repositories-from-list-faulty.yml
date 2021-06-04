@@ -1,0 +1,1624 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:01 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298825x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"slug":"hugo-pages","id":6,"name":"hugo-pages","scmId":"git","state":"AVAILABLE","statusMessage":"Available","forkable":true,"project":{"key":"MIGR8","id":2,"name":"Migrate
+        Me","description":"Test project description","public":false,"type":"NORMAL","links":{"self":[{"href":"https://example.com/projects/MIGR8"}]}},"public":false,"links":{"clone":[{"href":"ssh://git@example.com:7999/migr8/hugo-pages.git","name":"ssh"},{"href":"https://unit-test@example.com/scm/migr8/hugo-pages.git","name":"http"}],"self":[{"href":"https://example.com/projects/MIGR8/repos/hugo-pages/browse"}]}}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/admin/users?filter=unit-test&limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:02 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298826x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":1,"limit":250,"isLastPage":true,"values":[{"name":"unit-test","emailAddress":"unit-test@github.com","id":55,"displayName":"Unit
+        Test","active":true,"slug":"unit-test","type":"NORMAL","directoryName":"Bitbucket
+        Internal Directory","deletable":true,"lastAuthenticationTimestamp":1568354740892,"mutableDetails":true,"mutableGroups":true,"links":{"self":[{"href":"https://example.com/users/unit-test"}]}}],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/admin/groups?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:02 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298827x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":7,"limit":250,"isLastPage":true,"values":[{"name":"project-create-access","deletable":true},{"name":"Project_read
+        Access","deletable":true},{"name":"project_read_access","deletable":true},{"name":"stash-users","deletable":true},{"name":"test_group","deletable":true},{"name":"test-team-proj-level","deletable":true},{"name":"test-team-repo-level","deletable":true}],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/permissions/groups?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:03 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298828x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":2,"limit":250,"isLastPage":true,"values":[{"group":{"name":"project_read
+        access"},"permission":"REPO_WRITE"},{"group":{"name":"stash-users"},"permission":"REPO_READ"}],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:03 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298829x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"key":"MIGR8","id":2,"name":"Migrate Me","description":"Test project
+        description","public":false,"type":"NORMAL","links":{"self":[{"href":"https://example.com/projects/MIGR8"}]}}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/permissions/users?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:04 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298830x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":15,"limit":250,"isLastPage":true,"values":[{"user":{"name":"dpmex4527","emailAddress":"dpmex4527@github.com","id":4,"displayName":"Daniel
+        Perez","active":true,"slug":"dpmex4527","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/dpmex4527"}]}},"permission":"PROJECT_READ"},{"user":{"name":"kylemacey","emailAddress":"kylemacey@github.com","id":1,"displayName":"Kyle
+        Macey","active":true,"slug":"kylemacey","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/kylemacey"}]}},"permission":"PROJECT_ADMIN"},{"user":{"name":"mattcantstop","emailAddress":"mattcantstop@github.com","id":3,"displayName":"Matt
+        Duff","active":true,"slug":"mattcantstop","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/mattcantstop"}]}},"permission":"PROJECT_READ"},{"user":{"name":"migarjo","emailAddress":"migarjo@github.com","id":5,"displayName":"Michael
+        Jackson \uD83D\uDD7A\uD83C\uDFFB","active":true,"slug":"migarjo","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/migarjo"}]}},"permission":"PROJECT_ADMIN"},{"user":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}},"permission":"PROJECT_READ"},{"user":{"name":"test123","emailAddress":"dpmex4527+testing@github.com","id":6,"displayName":"Think
+        Displayname","active":true,"slug":"test123","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/test123"}]}},"permission":"PROJECT_READ"},{"user":{"name":"testUser1","emailAddress":"mattcantstop+1@github.com","id":7,"displayName":"Test
+        User 1","active":true,"slug":"testuser1","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser1"}]}},"permission":"PROJECT_WRITE"},{"user":{"name":"testUser2","emailAddress":"mattcantstop+2@gmail.com","id":8,"displayName":"Test
+        User 2","active":true,"slug":"testuser2","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser2"}]}},"permission":"PROJECT_READ"},{"user":{"name":"testUser3","emailAddress":"mattcantstop+3@github.com","id":9,"displayName":"Test
+        User 3","active":true,"slug":"testuser3","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser3"}]}},"permission":"PROJECT_READ"},{"user":{"name":"testUser4","emailAddress":"mattcantstop+4@github.com","id":10,"displayName":"Test
+        User 4","active":true,"slug":"testuser4","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser4"}]}},"permission":"PROJECT_READ"},{"user":{"name":"testUser5","emailAddress":"mattcantstop+5@github.com","id":11,"displayName":"Test
+        User 5","active":true,"slug":"testuser5","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser5"}]}},"permission":"PROJECT_READ"},{"user":{"name":"testUser6","emailAddress":"mattcantstop+6@github.com","id":12,"displayName":"Test
+        User 6","active":true,"slug":"testuser6","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser6"}]}},"permission":"PROJECT_READ"},{"user":{"name":"testUser7","emailAddress":"mattcantstop+7@github.com","id":13,"displayName":"Test
+        User 7","active":true,"slug":"testuser7","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser7"}]}},"permission":"PROJECT_READ"},{"user":{"name":"testUser8","emailAddress":"mattcantstop+8@github.com","id":14,"displayName":"Test
+        User 8","active":true,"slug":"testuser8","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser8"}]}},"permission":"PROJECT_READ"},{"user":{"name":"testUser9","emailAddress":"mattcantstop+9@github.com","id":15,"displayName":"Test
+        User 9","active":true,"slug":"testuser9","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser9"}]}},"permission":"PROJECT_READ"}],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/permissions/users?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:04 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298831x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":15,"limit":250,"isLastPage":true,"values":[{"user":{"name":"dpmex4527","emailAddress":"dpmex4527@github.com","id":4,"displayName":"Daniel
+        Perez","active":true,"slug":"dpmex4527","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/dpmex4527"}]}},"permission":"REPO_ADMIN"},{"user":{"name":"kylemacey","emailAddress":"kylemacey@github.com","id":1,"displayName":"Kyle
+        Macey","active":true,"slug":"kylemacey","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/kylemacey"}]}},"permission":"REPO_ADMIN"},{"user":{"name":"mattcantstop","emailAddress":"mattcantstop@github.com","id":3,"displayName":"Matt
+        Duff","active":true,"slug":"mattcantstop","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/mattcantstop"}]}},"permission":"REPO_ADMIN"},{"user":{"name":"migarjo","emailAddress":"migarjo@github.com","id":5,"displayName":"Michael
+        Jackson \uD83D\uDD7A\uD83C\uDFFB","active":true,"slug":"migarjo","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/migarjo"}]}},"permission":"REPO_ADMIN"},{"user":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}},"permission":"REPO_ADMIN"},{"user":{"name":"test123","emailAddress":"dpmex4527+testing@github.com","id":6,"displayName":"Think
+        Displayname","active":true,"slug":"test123","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/test123"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser1","emailAddress":"mattcantstop+1@github.com","id":7,"displayName":"Test
+        User 1","active":true,"slug":"testuser1","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser1"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser2","emailAddress":"mattcantstop+2@gmail.com","id":8,"displayName":"Test
+        User 2","active":true,"slug":"testuser2","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser2"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser3","emailAddress":"mattcantstop+3@github.com","id":9,"displayName":"Test
+        User 3","active":true,"slug":"testuser3","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser3"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser4","emailAddress":"mattcantstop+4@github.com","id":10,"displayName":"Test
+        User 4","active":true,"slug":"testuser4","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser4"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser5","emailAddress":"mattcantstop+5@github.com","id":11,"displayName":"Test
+        User 5","active":true,"slug":"testuser5","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser5"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser6","emailAddress":"mattcantstop+6@github.com","id":12,"displayName":"Test
+        User 6","active":true,"slug":"testuser6","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser6"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser7","emailAddress":"mattcantstop+7@github.com","id":13,"displayName":"Test
+        User 7","active":true,"slug":"testuser7","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser7"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser8","emailAddress":"mattcantstop+8@github.com","id":14,"displayName":"Test
+        User 8","active":true,"slug":"testuser8","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser8"}]}},"permission":"REPO_READ"},{"user":{"name":"testUser9","emailAddress":"mattcantstop+9@github.com","id":15,"displayName":"Test
+        User 9","active":true,"slug":"testuser9","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/testuser9"}]}},"permission":"REPO_READ"}],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/keys/1.0/projects/MIGR8/repos/hugo-pages/ssh?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:05 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298832x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":2,"limit":50,"isLastPage":true,"values":[{"key":{"id":4,"text":"ssh-rsa
+        AAAAB3NzaC1yc2EAAAADAQABAAACAQDS+xjiG6p3DoF9wfnQpYjzcMpF1O4a9nxUWmR62oCBJxDkrwuuSpgx5NU5Z7AmjJsL911OjP8lAfL1g5mpPvb8rrsAra+4GVFywfxyMYJgOjLOOW5yQu4E8Ss40Ow3l3RaoV9noYKsVJtKL037W6T5q024oLb9+fW7suI440gC3tMeIMNGyGgv9x32aIh19F6xDwtc1B0CVdkrApNzBfiDHoeU5NxE5zzbUvoTbNDvKANzxc8Rcm7xf2VUTDqHFBUh1eknYYru+9GPKfFOIbHWg72hWgBFMpQfhAiTfCsaZhO953zbjd0eORjtCJA5y/TIumNIVKQc58fdp+8XrcCYiPWU6bMvRmEtXxKUYQRWp48nG6/R0RpVIbfXxo1IAXgl/DOIwZ7Slg9g/P+TxXYxPJJP2rPBsrwqgOQyrlE9FWnGUzx9wYLpjcl1U6G92hOeGxdVD0LJqJy3iUW7N8xIE0MlVJG/TsEji3FsjaJOOvYWNrlxNsPpyZFAKl3ivG6jFh2hCY4njea8yfMqFEbeInvq5M9evk0HBXGlBRqiNqxeF+O2yNp4vL4vepq9tvLSA4z/OTBGbFjwNV0XTxS422tYsRsq4TLErU+x8J97REY8UQyRklYFrhIUtJsolbsi7UvPXPtxNtinazTN7Hlh/lMCWWGvnGZWYnsGIzSPOQ==
+        MIGR8/hugo-pages access key","label":"MIGR8/hugo-pages access key"},"repository":{"slug":"hugo-pages","id":6,"name":"hugo-pages","scmId":"git","state":"AVAILABLE","statusMessage":"Available","forkable":true,"project":{"key":"MIGR8","id":2,"name":"Migrate
+        Me","description":"Test project description","public":false,"type":"NORMAL","links":{"self":[{"href":"https://example.com/projects/MIGR8"}]}},"public":false,"links":{"clone":[{"href":"ssh://git@example.com:7999/migr8/hugo-pages.git","name":"ssh"},{"href":"https://unit-test@example.com/scm/migr8/hugo-pages.git","name":"http"}],"self":[{"href":"https://example.com/projects/MIGR8/repos/hugo-pages/browse"}]}},"permission":"REPO_READ"},{"key":{"id":5,"text":"ssh-rsa
+        AAAAB3NzaC1yc2EAAAADAQABAAACAQDEcWk96kUOUJ8rpsxZi/cdC29A6AvJQ77hN6qk0Pgr0F7X9HnJ/TMrgJDeJW96sqtsYLqww30aBpldhFSurUw0osvOHw8xMiirwm28bJZKixscfKuzRz8yU0tY52v2RNcLoKoIzZftJpal/Uh6nefIlIaaXKtNg7jk+dQc107dFHltb/59OAHGyT45waITh3Jve+q+eLoERmubckQeYhgcHRA+kr/UJQgsT7ddaNmLXIcjX3uUG/AhuT2+pcULb3dmmceigxJ177fweba37fhy6PGk95XJ/zrx6Cb3BgiGMtKl06lZhLVI2w2hqkSZkz0wqV+NLCq0dO+4y0ct9YDUZUrlsjM3ZH01VyGMdmj/o76b9/reqcdOs5cNFQapPYLSFP05oAsntd7pLcNYJFGucLY1dQYbpRr4giSLcK2hgWfs6+i22NHPfWZyJqn95g9S/hud9jj1wq0CASKtRHeazMhqVsW9dDpH7dkA+Hm73PMGy+dJf5C+GIqZLCSMhDdySvSHXhdabOba90CnZT+U2v2p1P7n5z/w6QNv+6Bu7MP7gPJLkRUcOjCRDKkEsVof1g88maRTSnOBXXG3Cpoj/qsuQrTsaJM6M78ggcZx4aTwYouuzFrLLsnr2fj4RlRKG1QX9yabCqMeGXIc2NkoXeVarksEg5HFjv4UWOny8Q==
+        MIGR8/hugo-pages access key (r/w)\r\n","label":"MIGR8/hugo-pages access key
+        (r/w)"},"repository":{"slug":"hugo-pages","id":6,"name":"hugo-pages","scmId":"git","state":"AVAILABLE","statusMessage":"Available","forkable":true,"project":{"key":"MIGR8","id":2,"name":"Migrate
+        Me","description":"Test project description","public":false,"type":"NORMAL","links":{"self":[{"href":"https://example.com/projects/MIGR8"}]}},"public":false,"links":{"clone":[{"href":"ssh://git@example.com:7999/migr8/hugo-pages.git","name":"ssh"},{"href":"https://unit-test@example.com/scm/migr8/hugo-pages.git","name":"http"}],"self":[{"href":"https://example.com/projects/MIGR8/repos/hugo-pages/browse"}]}},"permission":"REPO_WRITE"}],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/tags?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:05 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298833x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":5,"limit":250,"isLastPage":true,"values":[{"id":"refs/tags/some-tag","displayId":"some-tag","type":"TAG","latestCommit":"fe8582b9c7f6eb8ecf5cd5a26e5ef841e3b3efdb","latestChangeset":"fe8582b9c7f6eb8ecf5cd5a26e5ef841e3b3efdb","hash":null},{"id":"refs/tags/1.0","displayId":"1.0","type":"TAG","latestCommit":"220d5dc2582a49d694c503abdb8cf25bcdd81dce","latestChangeset":"220d5dc2582a49d694c503abdb8cf25bcdd81dce","hash":"d2c31b180f50ec441cd89084f0f7de7d4c36090e"},{"id":"refs/tags/=l","displayId":"=l","type":"TAG","latestCommit":"75d5f1a0a3f8c07806512a647d16d60c4cd1c36f","latestChangeset":"75d5f1a0a3f8c07806512a647d16d60c4cd1c36f","hash":null},{"id":"refs/tags/v1.0.0","displayId":"v1.0.0","type":"TAG","latestCommit":"3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd","latestChangeset":"3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd","hash":"fb035ef85099a7d4066b1a80c8eae85123aae30c"},{"id":"refs/tags/end-of-sinatra","displayId":"end-of-sinatra","type":"TAG","latestCommit":"1490680b9a193ff188eb0dff7281b29869c62937","latestChangeset":"1490680b9a193ff188eb0dff7281b29869c62937","hash":null}],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/commits/fe8582b9c7f6eb8ecf5cd5a26e5ef841e3b3efdb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:06 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298834x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"fe8582b9c7f6eb8ecf5cd5a26e5ef841e3b3efdb","displayId":"fe8582b9c7f","author":{"name":"dpmex4527","emailAddress":"dpmex4527@github.com","id":4,"displayName":"Daniel
+        Perez","active":true,"slug":"dpmex4527","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/dpmex4527"}]}},"authorTimestamp":1496247162000,"committer":{"name":"dpmex4527","emailAddress":"dpmex4527@github.com","id":4,"displayName":"Daniel
+        Perez","active":true,"slug":"dpmex4527","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/dpmex4527"}]}},"committerTimestamp":1496247162000,"message":"updated
+        README for test PR","parents":[{"id":"fc40f8230aab1a10e16c70b2706e2d2a6164eea0","displayId":"fc40f8230aa","author":{"name":"Kyle
+        Macey","emailAddress":"shout@kylemacey.com"},"authorTimestamp":1479933815000,"committer":{"name":"Kyle
+        Macey","emailAddress":"shout@kylemacey.com"},"committerTimestamp":1479933815000,"message":"Merge
+        branch ''merged-fork-pr'' into ''master''\r\n\r\nMerged Fork PR\r\n\r\nSee
+        merge request !7","parents":[{"id":"3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd","displayId":"3a1811f3cb9"},{"id":"75d5f1a0a3f8c07806512a647d16d60c4cd1c36f","displayId":"75d5f1a0a3f"}]}]}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/commits/220d5dc2582a49d694c503abdb8cf25bcdd81dce
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:06 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298835x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"220d5dc2582a49d694c503abdb8cf25bcdd81dce","displayId":"220d5dc2582","author":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"authorTimestamp":1462917591000,"committer":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"committerTimestamp":1462917591000,"message":"Need
+        some hugo","parents":[{"id":"a7291a05bb99bb755cdcaceb76b4f3d7f24837d5","displayId":"a7291a05bb9","author":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"authorTimestamp":1462886409000,"committer":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"committerTimestamp":1462886409000,"message":"Bundle
+        for script/server","parents":[{"id":"601508f36f21effc729410facb8966b033311849","displayId":"601508f36f2"}]}],"properties":{"commentCount":2}}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/commits/75d5f1a0a3f8c07806512a647d16d60c4cd1c36f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:07 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298836x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"75d5f1a0a3f8c07806512a647d16d60c4cd1c36f","displayId":"75d5f1a0a3f","author":{"name":"Kyle
+        Macey","emailAddress":"shout@kylemacey.com"},"authorTimestamp":1479933437000,"committer":{"name":"Kyle
+        Macey","emailAddress":"shout@kylemacey.com"},"committerTimestamp":1479933437000,"message":"Merged
+        Fork PR","parents":[{"id":"3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd","displayId":"3a1811f3cb9","author":{"name":"Matt","emailAddress":"spraints@gmail.com"},"authorTimestamp":1462918531000,"committer":{"name":"Matt","emailAddress":"spraints@gmail.com"},"committerTimestamp":1462918531000,"message":"Merge
+        branch ''omniauth-login'' into ''master''\r\n\r\nNeed some hugo, more than
+        #4\r\n\r\nBig changes\r\n\r\nSee merge request !1","parents":[{"id":"a7291a05bb99bb755cdcaceb76b4f3d7f24837d5","displayId":"a7291a05bb9"},{"id":"220d5dc2582a49d694c503abdb8cf25bcdd81dce","displayId":"220d5dc2582"}]}],"properties":{"commentCount":1}}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/commits/3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:08 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298837x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd","displayId":"3a1811f3cb9","author":{"name":"Matt","emailAddress":"spraints@gmail.com"},"authorTimestamp":1462918531000,"committer":{"name":"Matt","emailAddress":"spraints@gmail.com"},"committerTimestamp":1462918531000,"message":"Merge
+        branch ''omniauth-login'' into ''master''\r\n\r\nNeed some hugo, more than
+        #4\r\n\r\nBig changes\r\n\r\nSee merge request !1","parents":[{"id":"a7291a05bb99bb755cdcaceb76b4f3d7f24837d5","displayId":"a7291a05bb9","author":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"authorTimestamp":1462886409000,"committer":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"committerTimestamp":1462886409000,"message":"Bundle
+        for script/server","parents":[{"id":"601508f36f21effc729410facb8966b033311849","displayId":"601508f36f2"}]},{"id":"220d5dc2582a49d694c503abdb8cf25bcdd81dce","displayId":"220d5dc2582","author":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"authorTimestamp":1462917591000,"committer":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"committerTimestamp":1462917591000,"message":"Need
+        some hugo","parents":[{"id":"a7291a05bb99bb755cdcaceb76b4f3d7f24837d5","displayId":"a7291a05bb9"}]}]}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/commits/1490680b9a193ff188eb0dff7281b29869c62937
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:08 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298838x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"1490680b9a193ff188eb0dff7281b29869c62937","displayId":"1490680b9a1","author":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"authorTimestamp":1462885570000,"committer":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"committerTimestamp":1462885570000,"message":"Choose
+        my scopes","parents":[{"id":"27c44637e863f719c071d961ab42a6afc041e034","displayId":"27c44637e86","author":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"authorTimestamp":1462885227000,"committer":{"name":"Matt
+        Burke","emailAddress":"spraints@gmail.com"},"committerTimestamp":1462885227000,"message":"Configure
+        oauth","parents":[{"id":"0b5f5672a032c7248140440609c73305f57b295b","displayId":"0b5f5672a03"}]}]}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/branch-utils/1.0/projects/MIGR8/repos/hugo-pages/branchmodel
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:08 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298839x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"development":{"id":"refs/heads/master","displayId":"master","type":"BRANCH","latestCommit":"0a3d9216927256a854a219f3c7cdb757aee11dbc","latestChangeset":"0a3d9216927256a854a219f3c7cdb757aee11dbc","isDefault":true},"production":{"id":"refs/heads/perm-test","displayId":"perm-test","type":"BRANCH","latestCommit":"99349343681b819fc4ce962796be202c0a19d8c4","latestChangeset":"99349343681b819fc4ce962796be202c0a19d8c4","isDefault":false},"types":[{"id":"BUGFIX","displayName":"Bugfix","prefix":"bugfix/"},{"id":"FEATURE","displayName":"Feature","prefix":"feature/"},{"id":"HOTFIX","displayName":"Hotfix","prefix":"hotfix/"},{"id":"RELEASE","displayName":"Release","prefix":"release/"}]}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/branch-permissions/2.0/projects/MIGR8/repos/hugo-pages/restrictions?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:09 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298840x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":8,"limit":250,"isLastPage":true,"values":[{"id":109,"scope":{"type":"REPOSITORY","resourceId":6},"type":"pull-request-only","matcher":{"id":"refs/heads/bugfix/branch-permissions-test","displayId":"bugfix/branch-permissions-test","type":{"id":"BRANCH","name":"Branch"},"active":true},"users":[{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}}],"groups":["test_group"],"accessKeys":[]},{"id":110,"scope":{"type":"REPOSITORY","resourceId":6},"type":"read-only","matcher":{"id":"refs/heads/bugfix/branch-permissions-test2","displayId":"bugfix/branch-permissions-test2","type":{"id":"BRANCH","name":"Branch"},"active":true},"users":[],"groups":[],"accessKeys":[]},{"id":108,"scope":{"type":"REPOSITORY","resourceId":6},"type":"read-only","matcher":{"id":"refs/heads/bugfix/that/cool/perm-test","displayId":"bugfix/that/cool/perm-test","type":{"id":"BRANCH","name":"Branch"},"active":true},"users":[],"groups":[],"accessKeys":[]},{"id":106,"scope":{"type":"REPOSITORY","resourceId":6},"type":"fast-forward-only","matcher":{"id":"development","displayId":"Development","type":{"id":"MODEL_BRANCH","name":"Branching
+        model branch"},"active":true},"users":[],"groups":[],"accessKeys":[]},{"id":117,"scope":{"type":"REPOSITORY","resourceId":6},"type":"pull-request-only","matcher":{"id":"production","displayId":"Production","type":{"id":"MODEL_BRANCH","name":"Branching
+        model branch"},"active":true},"users":[{"name":"kylemacey","emailAddress":"kylemacey@github.com","id":1,"displayName":"Kyle
+        Macey","active":true,"slug":"kylemacey","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/kylemacey"}]}},{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}}],"groups":[],"accessKeys":[]},{"id":107,"scope":{"type":"REPOSITORY","resourceId":6},"type":"fast-forward-only","matcher":{"id":"BUGFIX","displayId":"Bugfix","type":{"id":"MODEL_CATEGORY","name":"Branching
+        model category"},"active":true},"users":[],"groups":[],"accessKeys":[]},{"id":114,"scope":{"type":"REPOSITORY","resourceId":6},"type":"pull-request-only","matcher":{"id":"branch-permissions-tes?","displayId":"branch-permissions-tes?","type":{"id":"PATTERN","name":"Pattern"},"active":true},"users":[{"name":"kylemacey","emailAddress":"kylemacey@github.com","id":1,"displayName":"Kyle
+        Macey","active":true,"slug":"kylemacey","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/kylemacey"}]}}],"groups":[],"accessKeys":[]},{"id":113,"scope":{"type":"REPOSITORY","resourceId":6},"type":"read-only","matcher":{"id":"branch-permissions-tes?","displayId":"branch-permissions-tes?","type":{"id":"PATTERN","name":"Pattern"},"active":true},"users":[{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}}],"groups":["test_group","project-create-access","Project_read
+        Access"],"accessKeys":[]}],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/branches?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:10 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298841x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":25,"limit":250,"isLastPage":true,"values":[{"id":"refs/heads/master","displayId":"master","type":"BRANCH","latestCommit":"0a3d9216927256a854a219f3c7cdb757aee11dbc","latestChangeset":"0a3d9216927256a854a219f3c7cdb757aee11dbc","isDefault":true},{"id":"refs/heads/comment-on-renamed-and-removed-file","displayId":"comment-on-renamed-and-removed-file","type":"BRANCH","latestCommit":"7267560b3605c6753bd054788cadbc7ada318248","latestChangeset":"7267560b3605c6753bd054788cadbc7ada318248","isDefault":false},{"id":"refs/heads/pr-review-comment-on-merge-conflict","displayId":"pr-review-comment-on-merge-conflict","type":"BRANCH","latestCommit":"8e08a671dd313c843082b4aba12fa571796a9d3c","latestChangeset":"8e08a671dd313c843082b4aba12fa571796a9d3c","isDefault":false},{"id":"refs/heads/commit-comment-not-master","displayId":"commit-comment-not-master","type":"BRANCH","latestCommit":"2b912a8ca196cd92cd351ef4fba52e5cedbfb734","latestChangeset":"2b912a8ca196cd92cd351ef4fba52e5cedbfb734","isDefault":false},{"id":"refs/heads/context-lines-test","displayId":"context-lines-test","type":"BRANCH","latestCommit":"112e299ef8f06f951dde8ce105aad0252180cde0","latestChangeset":"112e299ef8f06f951dde8ce105aad0252180cde0","isDefault":false},{"id":"refs/heads/pr-with-binary-file","displayId":"pr-with-binary-file","type":"BRANCH","latestCommit":"95ae6d5909d44a22b3df82040f1bf0c8387aad51","latestChangeset":"95ae6d5909d44a22b3df82040f1bf0c8387aad51","isDefault":false},{"id":"refs/heads/attachments-in-comments","displayId":"attachments-in-comments","type":"BRANCH","latestCommit":"268576529491c67f19db1af0fd2906cee0abb1f2","latestChangeset":"268576529491c67f19db1af0fd2906cee0abb1f2","isDefault":false},{"id":"refs/heads/comment-on-removed-commit","displayId":"comment-on-removed-commit","type":"BRANCH","latestCommit":"f6dafe7e502222499c285e24c20c01ad5789be12","latestChangeset":"f6dafe7e502222499c285e24c20c01ad5789be12","isDefault":false},{"id":"refs/heads/test-pr","displayId":"test-pr","type":"BRANCH","latestCommit":"cab4b7ed6e2355d7dae94c94609f482f842e20b4","latestChangeset":"cab4b7ed6e2355d7dae94c94609f482f842e20b4","isDefault":false},{"id":"refs/heads/update-bundle-to-1.16.2","displayId":"update-bundle-to-1.16.2","type":"BRANCH","latestCommit":"3cb7e5514a330fca5fc3b1c8b32883fe2ff813a9","latestChangeset":"3cb7e5514a330fca5fc3b1c8b32883fe2ff813a9","isDefault":false},{"id":"refs/heads/pr-comment-test","displayId":"pr-comment-test","type":"BRANCH","latestCommit":"e11596878774727839c640881b028ca5c0a96841","latestChangeset":"e11596878774727839c640881b028ca5c0a96841","isDefault":false},{"id":"refs/heads/bugfix/branch-permissions-test","displayId":"bugfix/branch-permissions-test","type":"BRANCH","latestCommit":"3f196110a84594a89c87864a1a93acc49db8db94","latestChangeset":"3f196110a84594a89c87864a1a93acc49db8db94","isDefault":false},{"id":"refs/heads/perm-test2","displayId":"perm-test2","type":"BRANCH","latestCommit":"717a584bff1380749b360b362db8c04ae194aaca","latestChangeset":"717a584bff1380749b360b362db8c04ae194aaca","isDefault":false},{"id":"refs/heads/bugfix/that/cool/perm-test","displayId":"bugfix/that/cool/perm-test","type":"BRANCH","latestCommit":"9c464a04ae939523f8a88122a09dadeaee2b5606","latestChangeset":"9c464a04ae939523f8a88122a09dadeaee2b5606","isDefault":false},{"id":"refs/heads/bugfix/perm-test","displayId":"bugfix/perm-test","type":"BRANCH","latestCommit":"59777e035d3371027513b0e483d53bb7d9143627","latestChangeset":"59777e035d3371027513b0e483d53bb7d9143627","isDefault":false},{"id":"refs/heads/perm-test","displayId":"perm-test","type":"BRANCH","latestCommit":"99349343681b819fc4ce962796be202c0a19d8c4","latestChangeset":"99349343681b819fc4ce962796be202c0a19d8c4","isDefault":false},{"id":"refs/heads/test-pr3","displayId":"test-pr3","type":"BRANCH","latestCommit":"a0b4cc70a65dadcad4e15e29638679b958107e5a","latestChangeset":"a0b4cc70a65dadcad4e15e29638679b958107e5a","isDefault":false},{"id":"refs/heads/no-commits","displayId":"no-commits","type":"BRANCH","latestCommit":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","latestChangeset":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","isDefault":false},{"id":"refs/heads/bugfix/some-other-perm-test","displayId":"bugfix/some-other-perm-test","type":"BRANCH","latestCommit":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","latestChangeset":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","isDefault":false},{"id":"refs/heads/bugfix/branch-permissions-test2","displayId":"bugfix/branch-permissions-test2","type":"BRANCH","latestCommit":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","latestChangeset":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","isDefault":false},{"id":"refs/heads/branch-permissions-test","displayId":"branch-permissions-test","type":"BRANCH","latestCommit":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","latestChangeset":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","isDefault":false},{"id":"refs/heads/test-commit-comments","displayId":"test-commit-comments","type":"BRANCH","latestCommit":"2d26b4300e6b7d2047690d67ffca167222b41b31","latestChangeset":"2d26b4300e6b7d2047690d67ffca167222b41b31","isDefault":false},{"id":"refs/heads/fp-pr","displayId":"fp-pr","type":"BRANCH","latestCommit":"542aed8ddc52388ce24212a74ecba6a511a9a763","latestChangeset":"542aed8ddc52388ce24212a74ecba6a511a9a763","isDefault":false},{"id":"refs/heads/omniauth-login","displayId":"omniauth-login","type":"BRANCH","latestCommit":"c222af415ecc78c644c139cbf5eb44a25205cbad","latestChangeset":"c222af415ecc78c644c139cbf5eb44a25205cbad","isDefault":false},{"id":"refs/heads/test-branch","displayId":"test-branch","type":"BRANCH","latestCommit":"a7c109c372ca8869b22350f2977cf75334d6bf57","latestChangeset":"a7c109c372ca8869b22350f2977cf75334d6bf57","isDefault":false}],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/many-commits
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:10 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298842x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"slug":"many-commits","id":8,"name":"many-commits","scmId":"git","state":"AVAILABLE","statusMessage":"Available","forkable":true,"project":{"key":"MIGR8","id":2,"name":"Migrate
+        Me","description":"Test project description","public":false,"type":"NORMAL","links":{"self":[{"href":"https://example.com/projects/MIGR8"}]}},"public":false,"links":{"clone":[{"href":"https://unit-test@example.com/scm/migr8/many-commits.git","name":"http"},{"href":"ssh://git@example.com:7999/migr8/many-commits.git","name":"ssh"}],"self":[{"href":"https://example.com/projects/MIGR8/repos/many-commits/browse"}]}}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/many-commits/permissions/groups?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:11 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298843x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":0,"limit":250,"isLastPage":true,"values":[],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/many-commits/permissions/users?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:11 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298844x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":0,"limit":250,"isLastPage":true,"values":[],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/keys/1.0/projects/MIGR8/repos/many-commits/ssh?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:12 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298845x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":0,"limit":50,"isLastPage":true,"values":[],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/many-commits/tags?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:12 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298846x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":0,"limit":250,"isLastPage":true,"values":[],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/branch-utils/1.0/projects/MIGR8/repos/many-commits/branchmodel
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:13 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298847x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"development":{"id":"refs/heads/master","displayId":"master","type":"BRANCH","latestCommit":"8cd41535235d00706e947914462e119ad338d3c3","latestChangeset":"8cd41535235d00706e947914462e119ad338d3c3","isDefault":true},"types":[]}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/branch-permissions/2.0/projects/MIGR8/repos/many-commits/restrictions?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:13 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298848x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":0,"limit":250,"isLastPage":true,"values":[],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/many-commits/branches?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:14 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298849x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":2,"limit":250,"isLastPage":true,"values":[{"id":"refs/heads/tmp","displayId":"tmp","type":"BRANCH","latestCommit":"fb3b5d7875c6fb5c333edcc502f6a524579c9b95","latestChangeset":"fb3b5d7875c6fb5c333edcc502f6a524579c9b95","isDefault":false},{"id":"refs/heads/master","displayId":"master","type":"BRANCH","latestCommit":"8cd41535235d00706e947914462e119ad338d3c3","latestChangeset":"8cd41535235d00706e947914462e119ad338d3c3","isDefault":true}],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/should-get-404
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 404
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:14 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298850x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"errors":[{"context":null,"message":"Repository MIGR8/should-get-404
+        does not exist.","exceptionName":"com.atlassian.bitbucket.repository.NoSuchRepositoryException"}]}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/~unit-test/repos/personal-repo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:15 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298851x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"slug":"personal-repo","id":14,"name":"personal-repo","scmId":"git","state":"AVAILABLE","statusMessage":"Available","forkable":true,"project":{"key":"~UNIT-TEST","id":22,"name":"Unit
+        Test","type":"PERSONAL","owner":{"name":"unit-test","emailAddress":"unit-test@github.com","id":55,"displayName":"Unit
+        Test","active":true,"slug":"unit-test","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/unit-test"}]}},"links":{"self":[{"href":"https://example.com/users/unit-test"}]}},"public":false,"links":{"clone":[{"href":"https://unit-test@example.com/scm/~unit-test/personal-repo.git","name":"http"},{"href":"ssh://git@example.com:7999/~unit-test/personal-repo.git","name":"ssh"}],"self":[{"href":"https://example.com/users/unit-test/repos/personal-repo/browse"}]}}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/~unit-test/repos/personal-repo/permissions/groups?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:15 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298852x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":0,"limit":250,"isLastPage":true,"values":[],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/~unit-test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:16 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298853x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"key":"~UNIT-TEST","id":22,"name":"Unit Test","type":"PERSONAL","owner":{"name":"unit-test","emailAddress":"unit-test@github.com","id":55,"displayName":"Unit
+        Test","active":true,"slug":"unit-test","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/unit-test"}]}},"links":{"self":[{"href":"https://example.com/users/unit-test"}]}}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/~unit-test/repos/personal-repo/permissions/users?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:16 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298854x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":0,"limit":250,"isLastPage":true,"values":[],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/keys/1.0/projects/~unit-test/repos/personal-repo/ssh?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:17 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298855x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":0,"limit":50,"isLastPage":true,"values":[],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/~unit-test/repos/personal-repo/tags?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:17 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298856x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"size":0,"limit":250,"isLastPage":true,"values":[],"start":0}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/branch-utils/1.0/projects/~unit-test/repos/personal-repo/branchmodel
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 409
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:18 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298857x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"errors":[{"context":null,"message":"Cannot construct branch model
+        for empty repository ~UNIT-TEST/personal-repo[14]","exceptionName":"com.atlassian.bitbucket.repository.EmptyRepositoryException"}]}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/~~unit-test/repos/personal-repo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 404
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Fri, 13 Sep 2019 06:06:18 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx366x298858x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"errors":[{"context":null,"message":"Project ~~unit-test does not
+        exist.","exceptionName":"com.atlassian.bitbucket.project.NoSuchProjectException"}]}'
+    http_version: 
+  recorded_at: Fri, 13 Sep 2019 06:05:44 GMT
+recorded_with: VCR 5.0.0

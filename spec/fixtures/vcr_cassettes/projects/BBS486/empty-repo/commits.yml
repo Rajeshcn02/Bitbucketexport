@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/BBS486/repos/empty-repo/commits?limit=250
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      X-Arequestid:
+      - "@6A8PKOx1057x967x0"
+      X-Asen:
+      - SEN-L13784713
+      X-Auserid:
+      - '2'
+      X-Ausername:
+      - unit-test
+      Cache-Control:
+      - no-cache, no-transform
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      Content-Type:
+      - application/json;charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Jun 2019 17:37:03 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"errors":[{"context":null,"message":"refs/heads/master is set as the
+        default branch, but this branch does not exist","exceptionName":"com.atlassian.bitbucket.repository.NoDefaultBranchException"}]}'
+    http_version: 
+  recorded_at: Tue, 18 Jun 2019 17:37:03 GMT
+recorded_with: VCR 3.0.3

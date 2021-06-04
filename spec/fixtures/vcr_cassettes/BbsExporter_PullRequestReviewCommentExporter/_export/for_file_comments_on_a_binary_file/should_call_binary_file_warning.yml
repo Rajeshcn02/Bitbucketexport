@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/pull-requests/6/diff/octocat.png?diffType=COMMIT&sinceId=ace0ddae7cc4f2967e9cefafdafb1aa5c65f3ea0&untilId=112e299ef8f06f951dde8ce105aad0252180cde0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept:
+      - "*/*"
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 23 Oct 2019 15:48:47 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx948x340627x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"fromHash":"ace0ddae7cc4f2967e9cefafdafb1aa5c65f3ea0","toHash":"112e299ef8f06f951dde8ce105aad0252180cde0","contextLines":10,"whitespace":"SHOW","diffs":[{"source":null,"destination":{"components":["octocat.png"],"parent":"","name":"octocat.png","extension":"png","toString":"octocat.png"},"binary":true,"fileComments":[{"properties":{"repositoryId":6},"id":155,"version":0,"text":"File
+        comment on binary file.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1562023442691,"updatedDate":1562023442691,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}}]}],"truncated":false}'
+    http_version: 
+  recorded_at: Wed, 23 Oct 2019 15:48:47 GMT
+recorded_with: VCR 5.0.0

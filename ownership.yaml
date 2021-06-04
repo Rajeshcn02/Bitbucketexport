@@ -1,0 +1,17 @@
+version: 1
+ownership:
+- team: github/data-liberation
+  repo: github.com/github/data-liberation
+  name: bbs-exporter
+  maintainer: kylemacey
+  mention: github/data-liberation
+  qos: best_effort
+  sev1:
+    slack: '#data-liberation'
+    tta: '1 business day'
+  sev2:
+    slack: '#data-liberation'
+    tta: '1 business day'
+  sev3:
+    slack: '#data-liberation'
+    tta: None

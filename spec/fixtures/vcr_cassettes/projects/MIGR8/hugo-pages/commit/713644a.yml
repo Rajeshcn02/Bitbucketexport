@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/commits/713644a829b9c2f724ae04b22285aa78b5c5616a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Mon, 01 Jul 2019 23:42:24 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx1422x242279x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"713644a829b9c2f724ae04b22285aa78b5c5616a","displayId":"713644a829b","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}},"authorTimestamp":1562023407000,"committer":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}},"committerTimestamp":1562023407000,"message":"Automatic
+        merge","parents":[{"id":"0633a65a0d2865ebc045455d19c97602d7414120","displayId":"0633a65a0d2","author":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"authorTimestamp":1560928931000,"committer":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"committerTimestamp":1560928931000,"message":"Add
+        octocat.png.","parents":[{"id":"6150ca7e1fd18c96e2907a4ba31880e8b2329459","displayId":"6150ca7e1fd"}]},{"id":"112e299ef8f06f951dde8ce105aad0252180cde0","displayId":"112e299ef8f","author":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"authorTimestamp":1562023400000,"committer":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"committerTimestamp":1562023400000,"message":"Add
+        octocat.png.","parents":[{"id":"ace0ddae7cc4f2967e9cefafdafb1aa5c65f3ea0","displayId":"ace0ddae7cc"}]}]}'
+    http_version: 
+  recorded_at: Mon, 01 Jul 2019 23:42:24 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/commits/9a06d517b7bd0c842ec6c61458a74a21b72e1f5d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 24 Apr 2019 00:14:08 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx14x141115x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"9a06d517b7bd0c842ec6c61458a74a21b72e1f5d","displayId":"9a06d517b7b","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}},"authorTimestamp":1555975498000,"committer":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL","links":{"self":[{"href":"https://example.com/users/synthead"}]}},"committerTimestamp":1555975498000,"message":"Automatic
+        merge","parents":[{"id":"6150ca7e1fd18c96e2907a4ba31880e8b2329459","displayId":"6150ca7e1fd","author":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"authorTimestamp":1555975498000,"committer":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"committerTimestamp":1555975498000,"message":"Merge
+        pull request #1 in MIGR8/hugo-pages from test-pr to master\n\n* commit ''cab4b7ed6e2355d7dae94c94609f482f842e20b4'':\n  Replace
+        test with testing in README.md.\n  Updated readme to test PR''s in Bitbucket
+        Server","parents":[{"id":"9b14a132c4f6f27b1ef4bee034f79151d434756a","displayId":"9b14a132c4f"},{"id":"cab4b7ed6e2355d7dae94c94609f482f842e20b4","displayId":"cab4b7ed6e2"}]},{"id":"ace0ddae7cc4f2967e9cefafdafb1aa5c65f3ea0","displayId":"ace0ddae7cc","author":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"authorTimestamp":1543358294000,"committer":{"name":"Maxwell
+        Pray","emailAddress":"synthead@github.com"},"committerTimestamp":1543358294000,"message":"Add
+        newline after doctype in application.html.erb.","parents":[{"id":"99ece937f497284e663b81fc1ad6ff9fcddd8a7c","displayId":"99ece937f49"}]}]}'
+    http_version: 
+  recorded_at: Wed, 24 Apr 2019 00:14:08 GMT
+recorded_with: VCR 3.0.3

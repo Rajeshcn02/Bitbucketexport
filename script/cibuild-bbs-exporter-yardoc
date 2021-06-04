@@ -1,0 +1,8 @@
+#!/bin/bash
+
+script_dir=$(dirname "$0")
+source "$script_dir/cibuild-environment"
+
+docker_build test
+
+docker_run test bundle exec yardoc --fail-on-warning

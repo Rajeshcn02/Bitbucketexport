@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://example.com/rest/api/1.0/projects/MIGR8/repos/hugo-pages/commits/87fabe1ef09821868e789b5bde5b5cfb20c901fa/diff?since=fc40f8230aab1a10e16c70b2706e2d2a6164eea0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - "<API_BASIC_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Wed, 24 Apr 2019 00:14:06 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, no-cache, no-transform
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      X-Arequestid:
+      - "@NR2V1Tx14x141105x0"
+      X-Asen:
+      - SEN-10038470
+      X-Auserid:
+      - '55'
+      X-Ausername:
+      - unit-test
+      Vary:
+      - X-AUSERNAME,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"fromHash":"fc40f8230aab1a10e16c70b2706e2d2a6164eea0","toHash":"87fabe1ef09821868e789b5bde5b5cfb20c901fa","contextLines":10,"whitespace":"SHOW","diffs":[{"source":{"components":["README.md"],"parent":"","name":"README.md","extension":"md","toString":"README.md"},"destination":{"components":["README.md"],"parent":"","name":"README.md","extension":"md","toString":"README.md"},"hunks":[{"context":"First,
+        set up this app by clicking the button below. It''ll walk you","sourceLine":4,"sourceSpan":10,"destinationLine":4,"destinationSpan":12,"segments":[{"type":"CONTEXT","lines":[{"source":4,"destination":4,"line":"through
+        the steps to configure it.","truncated":false,"commentIds":[97]},{"source":5,"destination":5,"line":"","truncated":false},{"source":6,"destination":6,"line":"[![Deploy
+        to Heroku](https://cdn.herokuapp.com/deploy/button.svg)](https://heroku.com/deploy)","truncated":false},{"source":7,"destination":7,"line":"","truncated":false},{"source":8,"destination":8,"line":"Next,
+        create a GitHub repository and add a hugo-pages branch to it.","truncated":false},{"source":9,"destination":9,"line":"See
+        [this repository''s hugo-pages branch](https://github.com/spraints/hugo-pages/tree/hugo-pages)","truncated":false},{"source":10,"destination":10,"line":"for
+        an example.","truncated":false},{"source":11,"destination":11,"line":"","truncated":false},{"source":12,"destination":12,"line":"Finally,
+        visit your GitHub Pages site! For example, see","truncated":false},{"source":13,"destination":13,"line":"[http://pickardayune.com/hugo-pages](http://spraints.github.io/hugo-pages).","truncated":false}],"truncated":false},{"type":"ADDED","lines":[{"source":14,"destination":14,"line":"","truncated":false,"commentIds":[94]},{"source":14,"destination":15,"line":"test","truncated":false,"commentIds":[95]}],"truncated":false}],"truncated":false}],"truncated":false,"fileComments":[{"properties":{"repositoryId":6},"id":99,"version":0,"text":"File-level
+        commit comment on README.md.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1544140868793,"updatedDate":1544140868793,"comments":[{"properties":{"repositoryId":6},"id":100,"version":0,"text":"Reply
+        to a file-level comment on README.md.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1544141256204,"updatedDate":1544141256204,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}}],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}}],"lineComments":[{"properties":{"repositoryId":6},"id":97,"version":0,"text":"Commit
+        comment on line 5.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1544087175461,"updatedDate":1544087175461,"comments":[{"properties":{"repositoryId":6},"id":98,"version":0,"text":"Reply
+        to commit comment on line 5.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1544087185140,"updatedDate":1544087185140,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}}],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}},{"properties":{"repositoryId":6},"id":94,"version":0,"text":"Commit
+        comment on merge commit.","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1543609199851,"updatedDate":1543609199851,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}},{"properties":{"repositoryId":6},"id":95,"version":0,"text":"Woohoo,
+        another commit comment on a merge commit!","author":{"name":"synthead","emailAddress":"synthead@github.com","id":2,"displayName":"Maxwell
+        Pray","active":true,"slug":"synthead","type":"NORMAL"},"createdDate":1543611629080,"updatedDate":1543611629080,"comments":[],"tasks":[],"permittedOperations":{"editable":false,"deletable":true}}]}],"truncated":false}'
+    http_version: 
+  recorded_at: Wed, 24 Apr 2019 00:14:06 GMT
+recorded_with: VCR 3.0.3

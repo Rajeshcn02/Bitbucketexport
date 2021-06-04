@@ -1,0 +1,212 @@
+#!/usr/bin/env ruby
+
+# frozen_string_literal: true
+
+require "bundler/setup"
+Bundler.require(:default)
+require "bbs_exporter"
+
+require "dotenv"
+require "optparse"
+
+generate_csv = false
+bbs_options = {
+  ssl_verify: true
+}
+optional_models = {}
+exporter_options = {
+  models:       BbsExporter::OPTIONAL_MODELS,
+  repositories: [],
+  ssl_verify:   true
+}
+optional_models_list = BbsExporter::OPTIONAL_MODELS.to_sentence
+
+optparse = OptionParser.new do |opts|
+  opts.banner = <<~EOF
+    Usage: bbs_exporter --out-file FILE.tar.gz --repository OWNER/REPO
+    Usage: bbs_exporter --out-file FILE.tar.gz --manifest MANIFEST.csv
+  EOF
+
+  opts.on(
+    "--out-file FILE",
+    "-o FILE",
+    "Write the archive to FILE."
+  ) do |output_path|
+    exporter_options[:output_path] = output_path
+  end
+
+  opts.on(
+    "--repository OWNER/REPO",
+    "-r OWNER/REPO",
+    "Export repository OWNER/REPO, where OWNER is a user (designated by a ~)" \
+    " or a project key.  May be specified multiple times."
+  ) do |repository|
+    exporter_options[:repositories] << repository
+  end
+
+  opts.on(
+    "--only MODELS",
+    Array,
+    "Export only the provided models from the list: #{optional_models_list}."
+  ) do |models|
+    optional_models[:only] = models
+  end
+
+  opts.on(
+    "--except MODELS",
+    Array,
+    "Don't export the provided models from the list: #{optional_models_list}."
+  ) do |models|
+    optional_models[:except] = models
+  end
+
+  opts.on(
+    "--manifest FILE",
+    "-f FILE",
+    "Export the list of repositories in FILE."
+  ) do |manifest|
+    exporter_options[:manifest] = manifest
+  end
+
+  opts.on(
+    "--fetch-repos",
+    "Generate a CSV-formatted MANIFEST file of all accessible repositories."
+  ) do
+    generate_csv = true
+  end
+
+  opts.on(
+    "--ignore-version-check",
+    "Ignore minimum server version check, which might cause erroneous behavior."
+  ) do
+    exporter_options[:ignore_version_check] = true
+  end
+
+  opts.on(
+    "--ssl-no-verify",
+    "Do not validate the SSL certificate of Bitbucket Server"
+  ) do
+    bbs_options[:ssl_verify] = exporter_options[:ssl_verify] = false
+  end
+
+  opts.on(
+    "--[no-]color",
+    TrueClass,
+    "Enable or disable color output."
+  ) do |color|
+    exporter_options[:color] = color
+  end
+
+  opts.on(
+    "--[no-]progress-bar",
+    TrueClass,
+    "Enable or disable the progress bar."
+  ) do |progress_bar|
+    exporter_options[:progress_bar] = progress_bar
+  end
+
+  opts.on(
+    "--help",
+    "-h",
+    "show this message"
+  ) do
+    abort(opts.to_s)
+  end
+end
+
+optparse.parse!
+
+abort(optparse.to_s) unless generate_csv || exporter_options.key?(:output_path)
+
+Dotenv.load
+
+unless ENV.key?("BITBUCKET_SERVER_URL")
+  abort("Must define `BITBUCKET_SERVER_URL`")
+end
+
+%w(
+  BITBUCKET_SERVER_OPEN_TIMEOUT
+  BITBUCKET_SERVER_READ_TIMEOUT
+  BITBUCKET_SERVER_RETRIES
+).each do |var|
+  if ENV.key?(var)
+    abort("`#{var}` must be a number") unless ENV[var].match(/\A\d+\z/)
+  end
+end
+
+begin
+  bbs = BitbucketServer.new(
+    **bbs_options.merge(
+      base_url:     ENV["BITBUCKET_SERVER_URL"],
+      password:     ENV["BITBUCKET_SERVER_API_PASSWORD"],
+      token:        ENV["BITBUCKET_SERVER_API_TOKEN"],
+      user:         ENV["BITBUCKET_SERVER_API_USERNAME"],
+
+      open_timeout: ENV["BITBUCKET_SERVER_OPEN_TIMEOUT"]&.to_i,
+      read_timeout: ENV["BITBUCKET_SERVER_READ_TIMEOUT"]&.to_i,
+      retries:      ENV["BITBUCKET_SERVER_RETRIES"]&.to_i
+    )
+  )
+rescue BitbucketServer::Connection::InvalidBaseUrl => exception
+  abort("`BITBUCKET_SERVER_URL`: #{exception.message}")
+end
+
+def generate_csv!(bbs)
+  puts "Generating repositories.csv..."
+
+  CSV.open("repositories.csv", "w") do |csv|
+    fetch_repos(bbs).each do |repository|
+      csv << repository
+    end
+  end
+end
+
+def fetch_repos(bbs)
+  repos = bbs.repositories.map do |repository|
+    [
+      repository["project"]["key"],
+      repository["slug"]
+    ]
+  end
+
+  repos.sort
+end
+
+def parse_optional_models!(optional_models, exporter_options)
+  optional_models.each do |option, models|
+    invalid = models - BbsExporter::OPTIONAL_MODELS
+
+    if invalid.any?
+      model = "model".pluralize(invalid.length)
+      abort(
+        "Invalid #{model} provided to --#{option}: #{invalid.to_sentence}.\n" \
+        "Valid options are: #{BbsExporter::OPTIONAL_MODELS.to_sentence}."
+      )
+    end
+
+    exporter_options[:models] = (
+      case option
+      when :only
+        BbsExporter::OPTIONAL_MODELS & models
+      when :except
+        BbsExporter::OPTIONAL_MODELS - models
+      end
+    )
+  end
+end
+
+def export!(bbs, exporter_options)
+  exporter = BbsExporter.new(
+    bitbucket_server: bbs,
+    options:          exporter_options
+  )
+
+  exporter.export
+end
+
+if generate_csv
+  generate_csv!(bbs)
+else
+  parse_optional_models!(optional_models, exporter_options)
+  abort unless export!(bbs, exporter_options)
+end

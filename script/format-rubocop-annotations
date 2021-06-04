@@ -1,0 +1,77 @@
+#!/usr/bin/env ruby
+
+# frozen_string_literal: true
+
+require "json"
+require "digest/md5"
+require "open3"
+
+class OffenseFormatter
+  TEST_SUITE = "RuboCop"
+
+  attr_reader :path, :offense
+
+  def initialize(path:, offense:)
+    @path = path
+    @offense = offense
+  end
+
+  def fingerprint
+    Digest::MD5.hexdigest(
+      [TEST_SUITE, cop_name, path].join("|")
+    )
+  end
+
+  def location
+    "#{path}:#{start_line}"
+  end
+
+  def start_line
+    offense["location"]["start_line"]
+  end
+
+  def message
+    offense["message"]
+  end
+
+  def cop_name
+    offense["cop_name"]
+  end
+
+  def annotation
+    {
+       location:    location,
+       suite:       TEST_SUITE,
+       name:        cop_name,
+       fingerprint: fingerprint,
+       message:     message
+    }
+  end
+
+  def failure
+    <<~EOF
+      ===FAILURE===
+      #{JSON.generate(annotation)}
+      ===END FAILURE===
+    EOF
+  end
+end
+
+stdout, stderr, status = Open3.capture3("rubocop", "--format", "json")
+
+rubocop_json = JSON.load(stdout)
+
+rubocop_json["files"].each do |file|
+  path = file["path"]
+
+  file["offenses"].each do |offense|
+    offense = OffenseFormatter.new(
+      path:    path,
+      offense: offense
+    )
+
+    puts offense.failure
+  end
+end
+
+exit(status.exitstatus)
